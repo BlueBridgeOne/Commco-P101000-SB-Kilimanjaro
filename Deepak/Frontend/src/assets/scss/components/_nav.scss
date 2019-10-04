@@ -1,0 +1,109 @@
+.overlay,
+.sideMenu {
+  position: fixed;
+  bottom: 0;
+}
+.overlay {
+  top: 0;
+  left: -100%;
+  right: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  transition: all ease 0.2s;
+}
+.overlay.open {
+  left: 0;
+  right: 0;
+}
+.sidebarNavigation {
+  margin-bottom: 0;
+  z-index: 999;
+  justify-content: flex-start;
+
+  @media screen and (max-width: $screen-md-max){
+    justify-content: space-between;
+  }
+}
+.sidebarNavigation .leftNavbarToggler {
+  margin-right: 10px;
+  order: -1;
+}
+.sideMenu {
+  left: -100%;
+  top: 52px;
+  transition: all ease 0.5s;
+  overflow: hidden;
+  width: 100%;
+  z-index: 999;
+  max-width: 80%;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+.sideMenu.open {
+  left: 0;
+  display: block;
+  overflow-y: auto;
+}
+.sideMenu ul {
+  margin: 0;
+  padding: 0 15px;
+}
+
+nav{
+  font-family: "Effra Medium";
+  font-size: 14px;
+
+  .bg-commco-red{
+    background-color: $commco-red;
+  }
+
+  .commco-header-logo{
+    width: 120px;
+    margin-top: -4px;
+  }
+
+  .header-icons{
+    font-size: 16px;
+    padding: 0 5px;
+    color: $white;
+    text-decoration: none;
+  }
+
+  ul {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0 50px !important;
+
+    @media screen and (max-width: $screen-lg-max){
+      padding: 0 50px !important;
+    }
+}
+
+  li {
+      display: block;
+      flex: 0 1 auto; /* Default */
+      list-style-type: none;
+  }
+
+  @media screen and (max-width: $screen-md-max){
+    padding: 0.5rem 0 !important;
+  }
+
+  .header-icon-mobile{
+    display: none;
+
+    @media screen and (max-width: $screen-md-max){
+      display: block;
+      font-size: 16px;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+
+
+}

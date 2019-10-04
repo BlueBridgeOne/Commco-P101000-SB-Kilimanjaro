@@ -1,0 +1,32 @@
+
+//Bootstrap styles 
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//Custom mixins
+@import "mixins/mixins";
+
+//Custom fonts
+@import "globals/fonts";
+
+//Font awesome
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/solid.scss";
+@import "fontawesome/brands.scss";
+
+//GIA custom settings --
+@import "settings";
+
+//Globals
+@import "globals/globals";
+@import "globals/typography";
+
+//Component specific styles 
+@import "components/nav";
+@import "components/header";
+@import "components/footer";
+@import "components/leader-link";
+@import "components/button-link";
+
+
+//Form specific styles
+@import "forms/buttons";

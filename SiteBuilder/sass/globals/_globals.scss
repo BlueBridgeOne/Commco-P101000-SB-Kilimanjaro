@@ -1,0 +1,31 @@
+body {
+  position: relative; // for slideout navigation
+  font-family: "Effra";
+  font-size:$sc-font-size-m;
+  margin:0!important;
+  background-color:#666;
+}
+
+.main{
+  background-color:#F1F1F1;
+  padding-top: 30px;
+  padding-bottom:30px;
+  min-height:400px;
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding-top: 30px;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding-top: 15px;
+  }
+
+}
+
+.nobanner{margin-top:48px;}
+
+.col-margin-bottom{
+  margin-bottom: 15px;
+}
+
+#__enclosingtable{display:none;}

@@ -1,0 +1,70 @@
+.title-hero{
+  .jumbotron {
+    background-image: url("../img/jpeg/backgrounds/background1.jpg");
+    background-size: cover;
+    height: 100%;
+    border-radius: 0;
+  
+    @media screen and (max-width: $screen-md-max){
+      display: none;
+    }
+  }
+
+  .leader-image-mobile{
+    display: none;
+
+    @media screen and (max-width: $screen-md-max){
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  .h1 {
+    font-family: "Effra Heavy";
+
+    &.desktop{
+      color: $white;
+      text-shadow: 2px 2px 4px $commco-shadow-transparent;
+      font-size: 120px;
+      
+      @media screen and (max-width: $screen-md-max){
+        display: none;
+      }
+    }
+  
+    &.mobile{
+      display: none;
+      color: $commco-black;
+      text-align: center;
+      font-size: 30px;
+      margin: 20px 0;
+
+      @media screen and (max-width: $screen-md-max){
+        display: block;
+      }
+    }
+  }
+}
+
+.h2{
+  font-family: "Effra Heavy";
+  font-size: 48px;
+  color: $commco-black;
+
+  margin: 5rem 0 1rem 0;
+  max-width: 450px;
+  border-top: 4px solid $commco-red;
+  padding-top: 60px;
+
+  @media screen and (max-width: $screen-md-max){
+    font-size: 30px;
+    margin: 0 auto;
+    max-width: 150px;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+.h3{
+  font-family: "Effra Medium";
+}

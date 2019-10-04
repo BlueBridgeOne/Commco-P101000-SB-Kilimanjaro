@@ -1,0 +1,86 @@
+.leader-link {
+    display: table;
+    width: 100%;
+    text-decoration: none !important;
+    background-color: $white;
+    color: $commco-black;
+
+    @media screen and (max-width: $screen-xs-max) {
+        display: block;
+    }
+
+    &:hover {
+        color: $commco-black;
+
+        @media screen and (min-width: $screen-sm-min) {
+
+            background-color: $commco-red;
+            color: $white;
+        }
+
+        .leader-link-align{
+            color:$white!important;
+        }
+    }
+
+    .leader-link-image-wrap {
+        display: table-cell;
+        width: 45%;
+
+        @media screen and (max-width: $screen-xs-max) {
+            display: block;
+            width: 100%;
+            position: relative;
+            padding-top: 30%;
+            overflow: hidden;
+
+            img {
+                display: block;
+                position: absolute;
+                top: -35%;
+                left: 0;
+            }
+        }
+    }
+
+    .leader-link-image {
+        width: 100%;
+    }
+
+    .leader-link-text-wrap {
+        display: table-cell;
+        width: 55%;
+        padding: 0px 20px;
+        vertical-align: middle;
+
+        @media screen and (max-width: $screen-xs-max) {
+            display: block;
+            width: 100%;
+        }
+
+        p{font-size:16px;}
+    }
+    .leader-link-align{
+        color:$commco-red;
+    }
+
+    .leader-link-arrow {
+        padding-left: 10px;
+    }
+
+    .leader-link-align {
+        text-align: right;
+    }
+
+}
+
+.leader-link-image.desktop{
+    @media screen and (max-width: $screen-xs-max) {
+        display: none!important;
+    }
+}
+.leader-link-image.mobile{
+    @media screen and (min-width: $screen-sm-min) {
+        display:none!important;
+    }
+}

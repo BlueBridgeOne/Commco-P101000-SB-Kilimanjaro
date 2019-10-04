@@ -1,0 +1,16 @@
+.btn-commco{
+    color: #fff;
+    background-color: $commco-red;
+    border-color: $commco-red;
+    padding: 20px 50px;
+
+    @media screen and (max-width: $screen-md-max){
+        padding: 10px 20px;
+    }
+
+    &:hover{
+        color: #fff;
+        background-color: $commco-red-dark;
+        border-color: $commco-red;
+    }
+}

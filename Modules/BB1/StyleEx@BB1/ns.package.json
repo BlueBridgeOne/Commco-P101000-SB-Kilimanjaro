@@ -1,0 +1,30 @@
+{
+	"gulp":
+	{
+		"javascript": [
+			"JavaScript/*"
+		],
+		"templates": [
+			"Templates/*"
+		],
+		"sass": [
+			"Sass/**/*.scss"
+		],
+		"configuration": [
+			"Configuration/*.json"
+		]
+	},
+	"overrides":
+	{
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/variables/_colors.scss": "Sass/variables/_colors.scss",
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/base/_spacing.scss": "Sass/base/_spacing.scss",
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/base/_lists.scss": "Sass/base/_lists.scss",
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/atoms/_buttons.scss": "Sass/atoms/_buttons.scss",
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/atoms/_forms.scss": "Sass/atoms/_forms.scss",
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/atoms/_typography.scss": "Sass/atoms/_typography.scss",
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/variables/_typography.scss": "Sass/variables/_typography.scss",
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/molecules/_information_cards.scss": "Sass/molecules/_information_cards.scss",
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/molecules/_information-box.scss": "Sass/molecules/_information-box.scss",
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/molecules/_list-header.scss": "Sass/molecules/_list-header.scss"
+	}
+}

@@ -1,0 +1,88 @@
+.contact {
+    a {
+        color: $commco-black;
+    }
+
+    a:hover {
+        color: $commco-red;
+    }
+}
+
+.contact-form-wrap {
+    border: 1px solid $commco-border;
+    background-color: $commco-white;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $screen-md-max) {
+        margin-left: 15px;
+    }
+}
+
+.contact-map-wrap {
+    border: 1px solid $commco-border;
+    background-color: $commco-white;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+
+    @media screen and (max-width: $screen-md-max) {
+        margin-left: 0px;
+    }
+}
+
+.form-check-label {
+    font-weight: normal;
+    display: inline;
+
+    a {
+        color: $commco-red !important;
+    }
+}
+
+.valid-feedback {
+    display: none;
+}
+
+.invalid-feedback {
+    display: none;
+    color: $commco-red;
+}
+
+label {
+    color: $commco-black;
+}
+
+.form-control {
+    border: 1px solid $commco-black;
+    background-color: $commco-input;
+}
+
+#changepassword {
+    background-color: #F1F1F1;
+    padding: 30px;
+    margin-top: 50px;
+    min-height: 400px;
+
+    @media screen and (max-width: $screen-sm-max) {
+        padding-top: 30px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        padding-top: 15px;
+    }
+
+    td {
+        padding: 5px;
+    }
+}
+
+.login-register-login-icon {
+    img {
+        max-width: 60px;
+    }
+}
+
+.required{
+    color:$commco-red;
+}

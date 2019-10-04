@@ -1,0 +1,56 @@
+
+/*
+ * Primary color settings
+ */
+
+$blue-light: #40B4DC;
+$blue-dark: #0c202f;
+$red: #E80029;
+$black: #000;
+$white: #fff;
+$grey-x-light:#f1f1f1;
+$grey-light:#d2d2d2;
+$grey-medium:#8c8c8c;
+$grey-dark:#5a5a5a;
+$grey-form:#C8C8C8;
+
+/*
+ * Commco color settings
+
+ */
+
+$commco-red: #D6001C;
+$commco-red-dark: #940014;
+$commco-black: #404040;
+$commco-border: #707070;
+$commco-light-border: #CCCCCC;
+$commco-shadow-solid: #2f4f4f;
+$commco-shadow-transparent: rgba(0, 0, 0, 0.25);
+$commco-shadow-semi-transparent: rgba(0, 0, 0, 0.5);
+$commco-light-grey:#cccccc;
+$commco-input:#eeeeee;
+$commco-white:#ffffff;
+$commco-black-hover:#000000;
+
+$sc-font-size-xxs: 8px;
+$sc-font-size-xs: 10px;
+$sc-font-size-s: 14px;
+$sc-font-size-m: 18px;
+$sc-font-size-l: 22px;
+$sc-font-size-xl: 26px;
+$sc-font-size-xxl: 34px;
+$sc-font-size-xxxl: 44px;
+
+$max-width:1240px;
+
+
+/*Break Points */
+$screen-sm-min:576px;
+$screen-md-min:768px;
+$screen-lg-min:992px;
+$screen-xl-min:1240px;
+
+$screen-xs-max:($screen-sm-min)-1;
+$screen-sm-max:($screen-md-min)-1;
+$screen-md-max:($screen-lg-min)-1;
+$screen-lg-max:($screen-xl-min)-1;

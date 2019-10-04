@@ -1,0 +1,72 @@
+h1 {
+  font-size: $sc-font-size-xxl;
+  color: $commco-black;
+  line-height: 1.2;
+  font-family: "Effra";
+  font-weight: bold;
+  clear: both;
+  text-transform: uppercase;
+
+  @media (min-width: $screen-md-min) {
+    font-size: $sc-font-size-xxxl;
+  }
+}
+
+h2 {
+  clear: both;
+  font-size: $sc-font-size-xl;
+  color: $commco-black;
+  line-height: 1.2;
+  font-family: "Effra";
+  font-weight: bold;
+
+  @media (min-width: $screen-md-min) {
+    font-size: $sc-font-size-xxl;
+  }
+}
+
+h3 {
+  clear: both;
+  font-size: $sc-font-size-l;
+  color: $commco-black;
+  line-height: 1.2;
+  font-family: "Effra";
+  
+
+  @media (min-width: $screen-md-min) {
+    font-size: $sc-font-size-xl;
+  }
+}
+
+h4 {
+  clear: both;
+  font-size: $sc-font-size-m;
+  color: $commco-black;
+  line-height: 1.4;
+  font-family: "Effra";
+
+  @media (min-width: $screen-md-min) {
+    font-size: $sc-font-size-l;
+  }
+}
+
+h5 {
+  clear: both;
+  font-size: $sc-font-size-s;
+  color: $commco-black;
+  line-height: 1.4;
+  font-family: "Effra";
+
+  @media (min-width: $screen-md-min) {
+    font-size: $sc-font-size-m;
+  }
+}
+
+p {
+  font-size: $sc-font-size-m;
+  line-height: 1.6;
+}
+
+small {
+  font-size: $sc-font-size-xs;
+}

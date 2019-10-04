@@ -1,0 +1,23 @@
+.btn-primary {
+    background-color: $commco-black !important;
+    border-radius:4px!important;
+    background-image: none!important;
+    border:none!important;
+    color:$commco-white!important;
+}
+
+.btn-primary:hover, .btn-primary:active{
+    background-color: $commco-black-hover!important;
+}
+
+.btn-secondary {
+    background-color: $commco-red !important;
+    border-radius:4px!important;
+    background-image: none!important;
+    border:none!important;
+    color:$commco-white!important;
+}
+
+.btn-secondary:hover, .btn-secondary:active{
+    background-color: $commco-red-dark!important;
+}

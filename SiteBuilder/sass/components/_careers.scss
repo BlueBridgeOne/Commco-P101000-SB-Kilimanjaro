@@ -1,0 +1,30 @@
+.career-link {
+    display: block;
+    width: 100%;
+    text-decoration: none !important;
+    background-color: $white;
+    color: $commco-black;
+    margin-bottom: 15px;
+    padding:15px 30px;
+
+    &:hover {
+        @media screen and (min-width: $screen-sm-min) {
+
+            background-color: $commco-red;
+            color: $white!important;
+
+            h2,h3,h4,h5,div,p{
+                color: $white!important;
+            }
+        }
+    }
+
+    .leader-link-arrow{
+        padding-left: 10px;
+    }
+
+    .leader-link-align{
+        text-align: right;
+    }
+}
+.cat-text{margin-bottom:15px;}

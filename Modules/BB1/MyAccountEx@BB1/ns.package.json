@@ -1,0 +1,16 @@
+{
+	"gulp":
+	{
+	  "SuiteScript":
+		[
+		"SuiteScript/*.js"
+		]
+	},
+	"overrides":
+	{
+		
+		"suitecommerce/MyAccountApplication@3.2.0/internal/index-local.ssp": "internal/index-local.ssp",
+		"suitecommerce/MyAccountApplication@3.2.0/SuiteScript/my_account.ssp": "SuiteScript/my_account.ssp"
+
+	}
+}

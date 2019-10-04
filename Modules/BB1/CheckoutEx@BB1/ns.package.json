@@ -1,0 +1,27 @@
+{
+	"gulp":
+	{
+	  "SuiteScript":
+		[
+		"SuiteScript/*.js"
+		]
+	},
+	"ssp-files": {
+			"SuiteScript/checkout.ssp": "checkout.ssp",
+			"Internal/index-local.ssp": "checkout-local.ssp"
+	},
+	"overrides":
+	{
+		"suitecommerce/SspLibraries@4.2.0/SuiteScript/Configuration.js": "SuiteScript/Configuration.js",
+		"suitecommerce/CheckoutApplication@2.4.0/internal/index-local.ssp": "internal/index-local.ssp",
+		"suitecommerce/CheckoutApplication@2.4.0/SuiteScript/checkout.ssp": "SuiteScript/checkout.ssp",
+		"suitecommerce/MenuTree@2.1.4/Sass/_menu-tree-node.scss": "Sass/_menu-tree-node.scss",
+		"suitecommerce/ListHeader@2.3.2/Sass/_list-header-view.scss": "Sass/_list-header-view.scss",
+		"suitecommerce/RecordViews@2.0.1/Sass/_recordviews.scss": "Sass/_recordviews.scss",
+		"suitecommerce/LoginRegister@2.4.0/Templates/login_register_login.tpl": "Templates/login_register_login.tpl",
+		"suitecommerce/LoginRegister@2.4.0/Templates/login_register.tpl": "Templates/login_register.tpl",
+		"suitecommerce/LoginRegister@2.4.0/Sass/_login-register.scss": "Sass/_login-register.scss",
+		"suitecommerce/LoginRegister@2.4.0/JavaScript/LoginRegister.View.js": "JavaScript/LoginRegister.View.js"
+
+	}
+}

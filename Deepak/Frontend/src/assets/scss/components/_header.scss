@@ -1,0 +1,14 @@
+header{
+    background: $commco-red;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+
+    .header-shadow-wrapper{
+        display: inline-block;
+        width: 100%;
+        -webkit-box-shadow: 0 8px 6px -3px $commco-shadow-transparent;
+        -moz-box-shadow: 0 8px 6px -3px $commco-shadow-transparent;
+        box-shadow: 0 8px 6px -3px $commco-shadow-transparent;
+    }
+}
