@@ -24,6 +24,8 @@ define(
 		//return {Array} A array with the custom fields id
 		getCustomFieldsIdToBeExposed: function(recordType)
 		{
+			
+			
 			if (Configuration.customFields)
 			{
 				return Configuration.customFields[recordType] || [];

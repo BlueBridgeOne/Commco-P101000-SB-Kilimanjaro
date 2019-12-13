@@ -66,7 +66,7 @@ define('Configuration'
 	var domain = '';
 	var homeTP = ModelsInit.session.getSiteSettings(['touchpoints']).touchpoints.home.match(/^http(s?)\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
 
-	nlapiLogExecution("DEBUG", 'home touch point: ' + homeTP);
+	//nlapiLogExecution("DEBUG", 'home touch point: ' + homeTP);
 
 	if(domain){
 		if(homeTP.length > 2){
@@ -76,7 +76,7 @@ define('Configuration'
 		domain = 'commco.bb1.website ';
 	}
 
-	nlapiLogExecution("DEBUG", 'domain: ' + domain);
+	//nlapiLogExecution("DEBUG", 'domain: ' + domain);
 
 	/* globals ConfigurationManifestDefaults */
 	SC.Configuration = mergeConfigurationObjects(SC.Configuration, typeof(ConfigurationManifestDefaults) === 'undefined' ? {} : ConfigurationManifestDefaults);

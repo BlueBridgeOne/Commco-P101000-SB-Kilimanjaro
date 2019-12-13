@@ -27,6 +27,23 @@
 //
 // Styleguide 3.4
 
+.product-line-stock-msg-not-available {
+	display: none;
+}
+
+.balance-logo {
+	height: 50px;
+	float: right;
+	margin: 0 0 $sc-margin-lv3 $sc-margin-lv3;
+	@media (max-width: $screen-xs-max) {
+		height: 32px;
+		margin: 0 0 $sc-margin-lv2 $sc-margin-lv2;
+	}
+}
+.balance-title{
+	overflow:auto;
+}
+
 .info-card {
 	background: $commco-input;
 	border: 1px solid $commco-light-border;
@@ -52,13 +69,21 @@
 	padding: $sc-padding-lv3;
 }
 
-.menu-tree-node-submenu-wrapper{padding:0!important;}
+.menu-tree-node-submenu-wrapper {
+	padding: 0 !important;
+}
 
 @media (max-width: $screen-xs-max) {
-.myaccount-layout-row{margin-left:0px!important;margin-right:0px!important;}
+	.myaccount-layout-row {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
 }
 
-.case-detail-conversation-background{
-	border:1px solid $commco-border;
+.case-detail-conversation-background {
+	border: 1px solid $commco-border;
 }
-.myaccount-layout-title{display:none!important;}
+
+.myaccount-layout-title {
+	display: none !important;
+}

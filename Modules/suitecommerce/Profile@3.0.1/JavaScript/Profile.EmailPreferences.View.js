@@ -125,6 +125,11 @@ define(
 	,	getContext: function()
 		{
 			var campaign_subscriptions = this.model.get('campaignsubscriptions') || [];
+			for(var i=campaign_subscriptions.length-1;i>=0;i--){
+				if(campaign_subscriptions[i].name.indexOf("(Remove)")>-1){
+					campaign_subscriptions.splice(i,1);
+				}
+			}
 
 			// @class Profile.EmailPreferences.View.Context
 			return {

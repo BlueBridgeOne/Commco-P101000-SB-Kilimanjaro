@@ -83,6 +83,22 @@ define(
 			profile.currency = ModelsInit.session.getShopperCurrency();
 			profile.priceLevel = ModelsInit.session.getShopperPriceLevel().internalid ? ModelsInit.session.getShopperPriceLevel().internalid : ModelsInit.session.getSiteSettings(['defaultpricelevel']).defaultpricelevel;
 
+			try{
+				var company=nlapiGetUser();
+				var custentity_bb1_sb_logo=nlapiLookupField("customer", company, 'custentity_bb1_sb_logo');
+
+				if(custentity_bb1_sb_logo){
+					var logo=nlapiLoadFile(custentity_bb1_sb_logo);
+					var custentity_bb1_sb_logo_url=logo.getURL();
+					profile.custentity_bb1_sb_logo_url=custentity_bb1_sb_logo_url;
+					profile.custentity_bb1_sb_logo=custentity_bb1_sb_logo;
+				}
+
+				//nlapiLogExecution("debug","profile logo",company+" "+JSON.stringify(custentity_bb1_sb_logo));
+			}catch(err){
+nlapiLogExecution("debug","profile logo",err);
+			}
+			
 			return profile;
 		}
 

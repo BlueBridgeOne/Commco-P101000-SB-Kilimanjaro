@@ -236,15 +236,16 @@ small {
   -webkit-box-shadow: 0 8px 6px -3px rgba(0, 0, 0, 0.25) !important;
   -moz-box-shadow: 0 8px 6px -3px rgba(0, 0, 0, 0.25) !important;
   box-shadow: 0 8px 6px -3px rgba(0, 0, 0, 0.25) !important; }
-  @media screen and (max-width: 991px) {
-    .dropdown-menu {
-      box-shadow: none !important;
-      position: static;
-      float: none; } }
   .dropdown-menu li a {
     color: #ffffff !important; }
     .dropdown-menu li a:hover {
       color: #404040 !important; }
+
+@media screen and (max-width: 991px) {
+  .mini-menu {
+    box-shadow: none !important;
+    position: static;
+    float: none; } }
 
 .nav-shadow {
   -webkit-box-shadow: 0 8px 6px -3px rgba(0, 0, 0, 0.25);

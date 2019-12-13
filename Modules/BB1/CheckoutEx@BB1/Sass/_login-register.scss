@@ -36,3 +36,17 @@
 
 .login-register-login-form-input{width:100%!important;}
 .login-register-login-icon{text-align:center;}
+
+.login-register-background{
+	position:fixed;
+	left:0;top:0;
+	width:100%;height:100%;
+	background-image:url('/assets/img/svg/login-splash-page-v2.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.login-register-foreground{
+	position:relative;
+	z-index:1;
+}

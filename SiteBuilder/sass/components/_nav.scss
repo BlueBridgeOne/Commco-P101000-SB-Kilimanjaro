@@ -210,11 +210,7 @@
   -moz-box-shadow: 0 8px 6px -3px $commco-shadow-transparent !important;
   box-shadow: 0 8px 6px -3px $commco-shadow-transparent !important;
 
-  @media screen and (max-width: $screen-md-max) {
-    box-shadow: none !important;
-    position: static;
-    float: none;
-  }
+  
 
   li {
     a {
@@ -226,6 +222,13 @@
       }
     }
   }
+}
+.mini-menu{
+@media screen and (max-width: $screen-md-max) {
+  box-shadow: none !important;
+  position: static;
+  float: none;
+}
 }
 
 .nav-shadow {

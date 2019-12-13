@@ -20,6 +20,7 @@ $color-balance-progress-bar: #2d9e6f;
 }
 
 .balance-billing-header {
+	clear:none;
 	margin-bottom: $sc-margin-lv2;
 	@media (min-width: $screen-sm-min) {
 		margin-bottom: $sc-margin-lv6;
@@ -52,7 +53,8 @@ $color-balance-progress-bar: #2d9e6f;
 
 .balance-indicator-bar {
 	width: 100%;
-	background-color: $sc-color-theme-background;
+	background-color: #EEE;
+	border:1px solid #DDD;
 	height: 35px;
 	margin-bottom: $sc-margin-lv6;
 }
@@ -98,7 +100,8 @@ $color-balance-progress-bar: #2d9e6f;
 
 .balance-indicator-details-available-credit-reference {
 	@extend %balance-reference-color;
-	background-color: $sc-color-theme-background;
+	background-color: #EEE;
+	border:1px solid #DDD;
 }
 
 .balance-indicator-details-available-credit-label {

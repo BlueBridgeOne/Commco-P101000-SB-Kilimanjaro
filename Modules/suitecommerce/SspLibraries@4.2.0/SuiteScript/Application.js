@@ -424,8 +424,9 @@ define(
 			if (do_real_count || (result.totalRecordsFound > 0 && result.totalRecordsFound > range_start))
 			{
 				var search = nlapiCreateSearch(record_type, filters, columns).runSearch();
+				
 				result.records = search.getResults(range_start, range_end);
-
+				
 				if (do_real_count && !options.column_count)
 				{
 					result.totalRecordsFound = search.getResults(0, 1000).length;

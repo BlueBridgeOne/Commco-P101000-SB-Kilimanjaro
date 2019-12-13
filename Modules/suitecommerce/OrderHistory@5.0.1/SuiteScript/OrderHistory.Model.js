@@ -59,6 +59,7 @@ define(
 			this.columns.origin = new nlobjSearchColumn('formulatext');
 
 			this.columns.origin.setFormula('case when LENGTH({source})>0 then 2 else (case when {location.locationtype.id} = \'' + SC.Configuration.locationTypeMapping.store.internalid + '\' then 1 else 0 end) end');
+
 		}
 	,	setExtraListFilters: function ()
 		{
@@ -115,7 +116,7 @@ define(
 			result = result || {};
 
 			result.trackingnumbers = record.getValue('trackingnumbers') ? record.getValue('trackingnumbers').split('<BR>') : null;
-
+			
 			if (this.isSCISIntegrationEnabled)
 			{
 				result.origin = parseInt(record.getValue(this.columns.origin), 10);

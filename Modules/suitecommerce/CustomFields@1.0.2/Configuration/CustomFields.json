@@ -23,7 +23,8 @@
 				"mandatory": true
 			},			
 
-			"default":[				
+			"default":[		
+				"custbody_bb1_so_title"		
 			]
 		}
 	}
