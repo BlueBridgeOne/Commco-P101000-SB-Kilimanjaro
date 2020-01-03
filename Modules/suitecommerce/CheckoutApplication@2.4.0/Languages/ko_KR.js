@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "최대 999자까지 입력할 수 있습니다.",
 	"Minimum of $(0) required": "최소 $(0)개가 필요합니다.",
 	"No Items Yet": "아직 품목이 없습니다.",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "고객님의 견적이 제출되고 나면, <strong>영업일 기준 XX일</strong> 후에 영업 담당자가 고객님께 연락드릴 것입니다. 즉각적인 지원이 필요한 경우 <strong>(000)-XXX-XXXX</strong> 또는 <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>으로 이메일을 보내주시기 바랍니다.",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "고객님의 견적이 제출되고 나면, <strong>영업일 기준 XX일</strong> 후에 영업 담당자가 고객님께 연락드릴 것입니다. 즉각적인 지원이 필요한 경우 <strong>+44 (0)1344 523000</strong> 또는 <a href=\"mailto:hello@commco.com\">hello@commco.com</a>으로 이메일을 보내주시기 바랍니다.",
 	"Please select at least one item": "한 개 이상의 품목을 선택하십시오.",
 	"Quote basket <span>(300)</span>": "견적 바구니<span>(300)</span>",
 	"Request a Quote": "견적 요청",

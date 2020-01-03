@@ -6,11 +6,10 @@
 }}
 
 {{#if node.showChildren}}
-
 <div class="menu-tree-node" data-type="menu-tree-node-expandable" data-type="menu-tree-node-expandable" data-id='{{node.id}}' data-permissions="{{node.permission}}" data-permissions-operator="{{node.permissionOperator}}">
 
 	<a class="menu-tree-node-item-anchor" data-target="#menu-tree-node-{{node.id}}" data-action="expander" data-id="{{node.id}}">
-		{{node.name}}
+		{{translate node.name}}
 		<i class="menu-tree-node-item-icon"></i>
 	</a>
 
@@ -24,7 +23,7 @@
 
 <div class="menu-tree-node" data-type="menu-tree-node" data-permissions="{{node.permission}}" data-permissions-operator="{{node.permissionOperator}}">
 
-	<a class="menu-tree-node-item-anchor" href="{{node.url}}" target="{{node.target}}" data-id="{{node.id}}">{{node.name}}</a>
+	<a class="menu-tree-node-item-anchor" href="{{node.url}}" target="{{node.target}}" data-id="{{node.id}}">{{translate node.name}}</a>
 
 </div>
 

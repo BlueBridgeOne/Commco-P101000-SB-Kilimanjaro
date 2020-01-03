@@ -51,6 +51,11 @@
 				{{translate 'Forgot password?'}}
 			</a>
 		</div>
+		<p style="text-align:center;margin:0;">
+		<a class="login-register-login-forgot" style="display:inline;margin:0;" href="http://www.commco.com" data-touchpoint="home">
+				{{translate '< Return to HomePage'}}
+			</a>
+			</p>
 	</fieldset>
 </form>
 

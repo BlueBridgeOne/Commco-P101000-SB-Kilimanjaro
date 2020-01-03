@@ -24,7 +24,39 @@
 			},			
 
 			"default":[		
-				"custbody_bb1_so_title"		
+				"custbody_bb1_so_title"	
+			]
+		},"customFields.estimate": {
+            "group": "advancedSettings",
+            "subtab": "customFields",
+			"type": "array",
+			"title": "Quotation",
+			"docRef": "",
+			"description": "Quotation custom field",
+			"items": {
+				"type": "string",
+				"title": "Field id",
+				"mandatory": true
+			},			
+
+			"default":[		
+				"title"	
+			]
+		},"customFields.invoice": {
+            "group": "advancedSettings",
+            "subtab": "customFields",
+			"type": "array",
+			"title": "Quotation",
+			"docRef": "",
+			"description": "Quotation custom field",
+			"items": {
+				"type": "string",
+				"title": "Field id",
+				"mandatory": true
+			},			
+
+			"default":[		
+				"custbody_bb1_so_title"	
 			]
 		}
 	}

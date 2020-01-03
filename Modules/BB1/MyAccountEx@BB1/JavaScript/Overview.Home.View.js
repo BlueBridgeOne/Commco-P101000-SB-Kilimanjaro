@@ -20,7 +20,7 @@ define('Overview.Home.View'
 	,	'OrderHistory.List.Tracking.Number.View'
 	,	'RecordViews.View'
 	,	'Handlebars'
-
+,'Profile.Model'
 	,	'overview_home.tpl'
 
 	,	'Backbone'
@@ -39,7 +39,7 @@ define('Overview.Home.View'
 	,	OrderHistoryListTrackingNumberView
 	,	RecordViewsView
 	,	Handlebars
-
+,ProfileModel
 	,	overview_home_tpl
 
 	,	Backbone
@@ -82,6 +82,8 @@ define('Overview.Home.View'
 				this.email_change_verification = SC.SESSION.email_change_verification;
 				delete SC.SESSION.email_change_verification;
 			}
+
+			this.profileModel = ProfileModel.getInstance();
 		}
 
 		//@method getContext @return Overview.Home.View.Context
@@ -89,8 +91,18 @@ define('Overview.Home.View'
 		{
 			var isSCISIntegrationEnabled = Configuration.get('siteSettings.isSCISIntegrationEnabled', false);
 
+var custentity_bb1_sb_logo_url;
+			if (this.profileModel.get('isLoggedIn') === 'T')
+			{
+				custentity_bb1_sb_logo_url = this.profileModel.get('custentity_bb1_sb_logo_url')
+			}
+
+			
+
+
 			//@class Overview.Home.View.Context
 			return {
+				custentity_bb1_sb_logo_url:custentity_bb1_sb_logo_url,
 				//@property {Boolean} collectionLengthGreaterThan0
 				collectionLengthGreaterThan0: this.collection.length > 0
 				//@property {Boolean} hasCustomerSupportURL
@@ -204,7 +216,7 @@ define('Overview.Home.View'
 							}
 						];
 
-						columns.splice(2, 0, dynamic_column);
+						columns.splice(4, 0, dynamic_column);
 
 						var model = new Backbone.Model({
 							title: new Handlebars.SafeString(_('<span class="tranid">$(0)</span>').translate(order.get('tranid')))
@@ -215,6 +227,7 @@ define('Overview.Home.View'
 						,	internalid: order.get('internalid')
 						,	trackingNumbers: order.get('trackingnumbers')
 						,	columns: columns
+						,showView:true
 						});
 
 						return model;

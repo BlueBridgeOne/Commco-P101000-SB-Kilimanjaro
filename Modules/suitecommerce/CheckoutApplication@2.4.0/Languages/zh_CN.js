@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "最多 999 个字符。",
 	"Minimum of $(0) required": "至少需要 $(0)",
 	"No Items Yet": "还没有货品",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "提交您的报价后，一名销售代表将在 <strong>XX 个工作日</strong>内与您联系。若要寻求即时帮助，请给我们打电话（电话号码为 <strong>(000)-XXX-XXXX</strong>）或发送电子邮件（电子邮件地址为 <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>）",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "提交您的报价后，一名销售代表将在 <strong>XX 个工作日</strong>内与您联系。若要寻求即时帮助，请给我们打电话（电话号码为 <strong>+44 (0)1344 523000</strong>）或发送电子邮件（电子邮件地址为 <a href=\"mailto:hello@commco.com\">hello@commco.com</a>）",
 	"Please select at least one item": "请至少选择一件货品",
 	"Quote basket <span>(300)</span>": "报价篮 <span>(300)</span>",
 	"Request a Quote": "请求报价",

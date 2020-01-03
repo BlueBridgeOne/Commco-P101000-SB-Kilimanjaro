@@ -31,17 +31,48 @@
 	display: none;
 }
 
+
+.modal-backdrop {
+	z-index: 0 !important;
+}
+.balance-actions-proceed,.invoice-details-button-make-a-payment-container,.address-details-actions,.address-list-button-container{
+	display:none!important;
+}
+.quote-details-disclaimer-message,.quote-details-msg {
+	color: $sc-color-copy!important;
+  }
+  .login-register-login-forgot{
+	  font-size:$sc-font-size-s;
+	  color:$sc-color-copy;
+	  &:hover{
+		color:$commco-red;
+	  }
+  }
+  .login-register-login-icon img {
+    max-width: 60px;
+}
 .balance-logo {
 	height: 50px;
 	float: right;
 	margin: 0 0 $sc-margin-lv3 $sc-margin-lv3;
+
 	@media (max-width: $screen-xs-max) {
 		height: 32px;
 		margin: 0 0 $sc-margin-lv2 $sc-margin-lv2;
 	}
 }
-.balance-title{
-	overflow:auto;
+
+.home-logo {
+	height: 50px;
+	display:inline-block;
+
+	@media (max-width: $screen-xs-max) {
+		height: 32px;
+	}
+}
+
+.balance-title {
+	overflow: auto;
 }
 
 .info-card {

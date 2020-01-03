@@ -35,19 +35,19 @@ define('PrintStatement.Router'
 	,	printstatement: function ()
 		{
 			var	view;
-			if (SC.ENVIRONMENT.permissions.transactions.tranStatement === 2)
-			{
+			// if (SC.ENVIRONMENT.permissions.transactions.tranStatement === 2)
+			// {
 				view = new PrintStatementView({
 						application: this.application
 					,	model: new PrintStatementModel()
 					});
-			}
-			else
-			{
-				view = new ErrorManagementForbiddenErrorView({
-					application: this.application
-				});
-			}
+			// }
+			// else
+			// {
+			// 	view = new ErrorManagementForbiddenErrorView({
+			// 		application: this.application
+			// 	});
+			// }
 
 			view.showContent();
 			return view;

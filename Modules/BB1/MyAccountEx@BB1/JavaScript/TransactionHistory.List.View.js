@@ -194,12 +194,17 @@ define(
 							touchpoint: 'customercenter'
 						,	title: new Handlebars.SafeString(_('<span class="tranid">$(0)</span>').translate(transaction_history.get('tranid')))
 						,	detailsURL: transaction_history.getTypeUrl()
-
+						,showView:true
 						,	id: transaction_history.id
 						,	internalid: transaction_history.id
 
 						,	columns: [
-								{
+							{
+								label: _('Transaction Title:').translate()
+							,	type: 'status'
+							,	name: 'custbody_bb1_so_title'
+							,	value: (transaction_history.get('custbody_bb1_so_title')&&transaction_history.get('custbody_bb1_so_title').value)||(transaction_history.get('title').value&&transaction_history.get('title').value)
+							},{
 									label: _('Date:').translate()
 								,	type: 'date'
 								,	name: 'date'

@@ -55,7 +55,7 @@
 							{{/if}}
 						</label>
 						<div class="profile-information-group-form-controls" data-validation="control">
-							<input type="text" class="profile-information-input-large" id="companyname" name="companyname" value="{{companyName}}">
+							<input type="text" class="profile-information-input-large" readonly id="companyname" name="companyname" value="{{companyName}}" style="border:0;">
 						</div>
 					</div>
 				{{/if}}

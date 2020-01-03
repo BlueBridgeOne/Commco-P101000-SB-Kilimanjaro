@@ -34,6 +34,7 @@
 			<table class="invoice-paid-list-records">
 				<thead class="invoice-paid-list-records-head">
 					<tr class="invoice-paid-list-records-head-row">
+						<th></th>
 						<th class="invoice-paid-list-head-invoicenumber">{{translate 'Reference'}}</th>
 						<th>{{translate 'Transaction Title'}}</th>
 						<th>{{translate 'Amount'}}</th>

@@ -258,7 +258,7 @@ document.documentElement.className = (SC.ENVIRONMENT.isTouchEnabled) ? "touch" :
 document.write('<script src="<%= session.getAbsoluteUrl('languages/en.js') %>?t={{timestamp}}"><\\/script>');
 
 <% if (Environment && Environment.currentLanguage && Environment.currentLanguage.locale && Environment.currentLanguage.locale !== 'en') { %>
-	document.write('<script src="<%= session.getAbsoluteUrl('languages/myaccount_' + Environment.currentLanguage.locale + '.js') %>?t={{timestamp}}"><\\/' + 'script' + '>');
+	document.write('<script src="<%= session.getAbsoluteUrl('languages/myaccount_' + Environment.currentLanguage.locale.replace("_GB","") + '.js') %>?t={{timestamp}}"><\\/' + 'script' + '>');
 <% } %>
 
 SC.extensionModules = [];

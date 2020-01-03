@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "สูงสุด 999 ตัวอักษร",
 	"Minimum of $(0) required": "ปริมาณขั้นต่ำที่ต้องการของ $(0)",
 	"No Items Yet": "ยังไม่มีสินค้า",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "เมื่อใบเสนอราคาของคุณถูกส่งแล้ว ตัวแทนฝ่ายขายจะติดต่อคุณใน <strong>XX วันทำงาน</strong> หากต้องการความช่วยเหลือโดยทันที คุณสามารถโทรหาเราได้ที่ <strong>(000)-XXX-XXXX</strong> หรืออีเมลถึงเราที่ <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "เมื่อใบเสนอราคาของคุณถูกส่งแล้ว ตัวแทนฝ่ายขายจะติดต่อคุณใน <strong>XX วันทำงาน</strong> หากต้องการความช่วยเหลือโดยทันที คุณสามารถโทรหาเราได้ที่ <strong>+44 (0)1344 523000</strong> หรืออีเมลถึงเราที่ <a href=\"mailto:hello@commco.com\">hello@commco.com</a>",
 	"Please select at least one item": "โปรดเลือกสินค้าอย่างน้อยหนึ่งรายการ",
 	"Quote basket <span>(300)</span>": "ตะกร้าใบเสนอราคา <span>(300)</span",
 	"Request a Quote": "ขอใบเสนอราคา",

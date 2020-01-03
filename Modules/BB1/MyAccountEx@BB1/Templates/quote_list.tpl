@@ -16,7 +16,7 @@
 	<header class="quote-list-header">
 		<h2>{{pageHeader}}</h2>
 	</header>
-	<div data-view="List.Header"></div>
+	<div data-view="List.Header" style="display:none;"></div>
 	<div class="quote-list-results-container">
 		{{#if collectionLength}}
 

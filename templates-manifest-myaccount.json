@@ -141,7 +141,6 @@
   "receipt_details.tpl.js",
   "balance.tpl.js",
   "invoice_date.tpl.js",
-  "recordviews_selectable.tpl.js",
   "invoice_open_list.tpl.js",
   "invoice_paid_list.tpl.js",
   "invoice_details.tpl.js",

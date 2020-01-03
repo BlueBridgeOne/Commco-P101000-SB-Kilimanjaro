@@ -15,6 +15,7 @@ define(
 
 	,	'SC.MyAccount.Starter.Dependencies' // Auto generated at build time using configuration from distro.json
 	,	'SC.Extensions'
+	
 	]
 ,	function(
 		MyAccount
@@ -24,6 +25,7 @@ define(
 
 	,	entryPointModules
 	,	entryPointExtensionsModules
+	
 	)
 {
 	'use strict';

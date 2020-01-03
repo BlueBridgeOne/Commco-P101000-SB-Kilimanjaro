@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "Maximaal 999 tekens.",
 	"Minimum of $(0) required": "Minimaal $(0) vereist",
 	"No Items Yet": "Nog geen items",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "Nadat uw offerte is ingediend, neemt een van onze vertegenwoordigers binnen <strong>XX werkdagen</strong> contact met u op. Bel ons op <strong>(000)-XXX-XXXX</strong> of e-mail naar <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>, zodat we u direct kunnen helpen",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "Nadat uw offerte is ingediend, neemt een van onze vertegenwoordigers binnen <strong>XX werkdagen</strong> contact met u op. Bel ons op <strong>+44 (0)1344 523000</strong> of e-mail naar <a href=\"mailto:hello@commco.com\">hello@commco.com</a>, zodat we u direct kunnen helpen",
 	"Please select at least one item": "Selecteer minimaal één item",
 	"Quote basket <span>(300)</span>": "Offertemand <span>(300)</span>",
 	"Request a Quote": "Een offerte aanvragen",

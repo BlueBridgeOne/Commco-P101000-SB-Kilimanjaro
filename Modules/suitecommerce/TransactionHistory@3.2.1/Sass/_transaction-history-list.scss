@@ -55,7 +55,6 @@
 .transaction-history-list-headers-status {
 	@extend .recordviews-header !optional;
 	width: 25%;
-	text-align: right;
 }
 
 .transaction-history-list-results-container {
@@ -75,7 +74,7 @@
 
 		.recordviews-status {
 			width: 25%;
-			text-align: right;
+			
 			padding-bottom:0;
 		}
 

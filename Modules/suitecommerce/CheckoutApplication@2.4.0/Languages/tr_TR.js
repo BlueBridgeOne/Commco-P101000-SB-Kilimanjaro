@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "Maksimum 999 karakter.",
 	"Minimum of $(0) required": "Minimum $(0) gerekli",
 	"No Items Yet": "Henüz Kalem Yok",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "Fiyat teklifiniz gönderildiğinde, bir satış temsilcisi sizinle <strong>XX iş günü</strong> içinde irtibata geçecek. Hemen yardım almak için bizi <strong>(000)-XXX-XXXX</strong> numaralı telefondan arayın veya <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a> adresine e-posta gönderin",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "Fiyat teklifiniz gönderildiğinde, bir satış temsilcisi sizinle <strong>XX iş günü</strong> içinde irtibata geçecek. Hemen yardım almak için bizi <strong>+44 (0)1344 523000</strong> numaralı telefondan arayın veya <a href=\"mailto:hello@commco.com\">hello@commco.com</a> adresine e-posta gönderin",
 	"Please select at least one item": "Lütfen en az bir kalem seçin",
 	"Quote basket <span>(300)</span>": "Fiyat Teklifi sepeti <span>(300)</span>",
 	"Request a Quote": "Fiyat Teklifi İste",

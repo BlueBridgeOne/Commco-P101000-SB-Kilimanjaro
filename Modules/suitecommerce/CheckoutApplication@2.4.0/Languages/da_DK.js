@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "Maks. 999 tegn.",
 	"Minimum of $(0) required": "Kræver mindst $(0)",
 	"No Items Yet": "Endnu ingen varer",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "Når dit tilbud er sendt, kontakter en salgsrepræsentant dig om <strong>XX hverdage</strong>. Du kan få hjælp med det samme ved at ringe til os på <strong>(000)-XXX-XXXX</strong> eller ved at sende en e-mail til <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "Når dit tilbud er sendt, kontakter en salgsrepræsentant dig om <strong>XX hverdage</strong>. Du kan få hjælp med det samme ved at ringe til os på <strong>+44 (0)1344 523000</strong> eller ved at sende en e-mail til <a href=\"mailto:hello@commco.com\">hello@commco.com</a>",
 	"Please select at least one item": "Vælg mindst én vare",
 	"Quote basket <span>(300)</span>": "Tilbud for kurv <span>(300)</span>",
 	"Request a Quote": "Anmod om tilbud",

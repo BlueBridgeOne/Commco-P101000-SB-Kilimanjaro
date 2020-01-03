@@ -167,7 +167,7 @@ define('Invoice.PaidList.View'
 
 						,	id: invoice.get('internalid')
 						,	internalid: invoice.get('internalid')
-
+						,showView:true
 						,	columns: [
 							{
 								label: _('Transaction Title:').translate()

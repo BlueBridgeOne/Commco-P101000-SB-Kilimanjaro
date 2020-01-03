@@ -531,6 +531,7 @@ define(
 					if(fieldValue !== null)
 					{
 						var fieldInf = self.record.getLineItemField('item', field, lineId);
+						if(fieldInf){
 						line.options.push(
 							self.transactionModelGetLineOptionBuilder(
 								field
@@ -539,6 +540,7 @@ define(
 							,	fieldInf.mandatory
 							)
 						);
+							}
 					}
 				}
 			});

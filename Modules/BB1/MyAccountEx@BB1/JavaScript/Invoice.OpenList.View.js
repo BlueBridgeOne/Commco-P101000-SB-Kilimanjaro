@@ -18,7 +18,7 @@ define(
 	,	'Handlebars'
 	,	'SC.Configuration'
 
-	,	'RecordViews.Selectable.View'
+	,	'RecordViews.View'
 
 	,	'invoice_open_list.tpl'
 
@@ -93,7 +93,7 @@ define(
 			,	collection: this.collection
 			,	filters: this.filterOptions
 			,	sorts: this.sortOptions
-			,	selectable: true
+			,	selectable: false
 			});
 
 			//Initialize invoices list
@@ -417,7 +417,7 @@ define(
 						var model = new Backbone.Model({
 							touchpoint: 'customercenter'
 						,	title: new Handlebars.SafeString(_('<span class="tranid">$(0)</span>').translate(invoice.get('tranid')))
-						,	url: 'invoices/' + invoice.get('internalid')
+						,	detailsURL: 'invoices/' + invoice.get('internalid')
 						,	actionType: 'select-invoice'
 
 						,	active: true
@@ -427,7 +427,7 @@ define(
 
 						,	check: invoice.get('checked')
 						,	navigable: true
-
+,showView:true
 						,	columns: [
 							{
 								label: _('Transaction Title:').translate()

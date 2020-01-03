@@ -43,18 +43,18 @@ define(
 					,	url: 'profileinformation'
 					,	index: 1
 					}
-				,	{
-						id: 'emailpreferences'
-					,	name: _('Email Preferences').translate()
-					,	url: 'emailpreferences'
-					,	index: 2
-					}
-				,	{
+					,	{
 						id: 'updateyourpassword'
 					,	name: _('Update Your Password').translate()
 					,	url: 'updateyourpassword'
-					,	index: 5
+					,	index: 2
+					},	{
+						id: 'emailpreferences'
+					,	name: _('Email Preferences').translate()
+					,	url: 'emailpreferences'
+					,	index: 3
 					}
+				
 				]
 			}
 		]

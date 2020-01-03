@@ -29,6 +29,7 @@ define(
 
 	var case_menu_items = function (application)
 	{
+		
 		if (!application.CaseModule.isEnabled())
 		{
 			return undefined;
@@ -54,14 +55,15 @@ define(
 				,	index: 2
 				}
 			]
-		,	permission: 'lists.listCase.2'
+		
 		};
 	};
-
+	
 	// Encapsulate all Case elements into a single module to be mounted to the application
 	// Update: Keep the application reference within the function once its mounted into the application
 	var CaseModule = function() 
 	{
+		
 		// Is Case functionality available for this application?
 		var isCaseManagementEnabled = function ()
 		{

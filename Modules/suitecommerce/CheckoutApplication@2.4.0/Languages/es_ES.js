@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "Máximo de 999 caracteres.",
 	"Minimum of $(0) required": "Es necesario un mínimo de $(0)",
 	"No Items Yet": "No hay ningún artículo aún",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "Cuando se haya enviado su cotización, un representante de ventas se pondrá en contacto con usted en el plazo de <strong>XX días laborables</strong>. Si necesita ayuda de inmediato, llámenos al <strong>(000)-XXX-XXXX</strong> o envíenos un mensaje de correo electrónico a la dirección <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "Cuando se haya enviado su cotización, un representante de ventas se pondrá en contacto con usted en el plazo de <strong>XX días laborables</strong>. Si necesita ayuda de inmediato, llámenos al <strong>+44 (0)1344 523000</strong> o envíenos un mensaje de correo electrónico a la dirección <a href=\"mailto:hello@commco.com\">hello@commco.com</a>",
 	"Please select at least one item": "Debe seleccionar al menos un artículo",
 	"Quote basket <span>(300)</span>": "Cotizar cesta <span>(300)</span>",
 	"Request a Quote": "Solicitar cotización",

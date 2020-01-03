@@ -96,6 +96,7 @@ define(
 			,	filters: this.filterOptions
 			,	sorts: this.sortOptions
 			,   allowEmptyBoundaries: true
+
 			});
 		}
 
@@ -201,7 +202,7 @@ define(
 								label: _('Transaction Title:').translate()
 							,	type: 'status'
 							,	name: 'custbody_bb1_so_title'
-							,	value: quote.get('custbody_bb1_so_title').value
+							,	value: quote.get('title').value
 							}
 						
 						,	{

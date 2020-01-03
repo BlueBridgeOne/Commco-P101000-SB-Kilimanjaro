@@ -8,7 +8,13 @@
 <section class="overview-home">
 	<div data-view="Overview.Messages"></div>
 	<div class="overview-home-orders" data-permissions="{{purchasesPermissions}}">
+
+{{#if custentity_bb1_sb_logo_url}}
+<img class="home-logo" src="{{custentity_bb1_sb_logo_url}}" />
+		{{/if}}
 		<div class="overview-home-orders-title">
+			
+
 			<h3>{{translate 'Recent Purchases'}}</h3>
 			<a href="/purchases" class="overview-home-orders-title-link">{{translate 'View Purchase History'}}</a>
 		</div>
@@ -18,6 +24,7 @@
 		<table class="overview-home-orders-list-table">
 				<thead class="overview-home-content-table">
 					<tr class="overview-home-content-table-header-row">
+						<th></th>
 						<th class="overview-home-content-table-header-row-title">
 							<span>{{translate 'Reference'}}</span>
 						</th>

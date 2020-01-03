@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "最多 999 個字元。",
 	"Minimum of $(0) required": "需要最少 $(0)",
 	"No Items Yet": "尚未有項目",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "提交報價後，業務代表將於 <strong>XX 個工作天</strong>內與您聯絡。如需立即協助，請致電：<strong>(000)-XXX-XXXX</strong>，或寄送電子郵件給我們：<a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "提交報價後，業務代表將於 <strong>XX 個工作天</strong>內與您聯絡。如需立即協助，請致電：<strong>+44 (0)1344 523000</strong>，或寄送電子郵件給我們：<a href=\"mailto:hello@commco.com\">hello@commco.com</a>",
 	"Please select at least one item": "請選擇最少一項項目。",
 	"Quote basket <span>(300)</span>": "報價籃 <span>(300)</span>",
 	"Request a Quote": "請求報價",

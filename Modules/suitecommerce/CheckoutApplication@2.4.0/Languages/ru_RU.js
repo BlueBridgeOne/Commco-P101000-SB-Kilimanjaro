@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "Максимум 999 знаков.",
 	"Minimum of $(0) required": "Требуется минимум $(0)",
 	"No Items Yet": "Нет товаров",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "После отправки запроса цен менеджер по продажам свяжется с вами через <strong>XX рабочих дней</strong>. Чтобы незамедлительно получить помощь, позвоните нам по номеру <strong>(000)-XXX-XXXX</strong> или напишите по адресу <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "После отправки запроса цен менеджер по продажам свяжется с вами через <strong>XX рабочих дней</strong>. Чтобы незамедлительно получить помощь, позвоните нам по номеру <strong>+44 (0)1344 523000</strong> или напишите по адресу <a href=\"mailto:hello@commco.com\">hello@commco.com</a>",
 	"Please select at least one item": "Выберите хотя бы один товар",
 	"Quote basket <span>(300)</span>": "Получить цены для корзины <span>(300)</span",
 	"Request a Quote": "Запросить коммерческое предложение",

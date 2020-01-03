@@ -5,76 +5,137 @@
 	may use this code subject to the terms that govern your access and use.
 */
 
-.menu-tree-node-item-submenu{
-	display:none;
+.menu-tree-node-item-submenu {
+	display: none;
 }
 
-.menu-tree-node-item-anchor{
-	@extend .medium-title-navigable;
-	display:block;
-	line-height:1em;
-	padding: $sc-padding-lv4;
-	background-color: $commco-black;
-	border-bottom: 1px solid $commco-border;
-	color:$commco-white;
+.menu-tree-node {
+	display: inline-block;
+	width: auto;
+
+	&.active>a {
+		color: $commco-red !important;
+	}
+}
+
+.menu-tree-node-item-anchor {
+
+	padding: $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3 0;
+	color: $sc-color-copy;
 	cursor: pointer;
 	text-transform: uppercase;
 	font-weight: normal;
 }
-.menu-tree-node-item-anchor:hover{
-	color:$commco-white;
-	background-color: $commco-black-hover;
+
+.menu-tree-node-item-anchor:hover {
+	color: $commco-red;
 }
 
-.menu-tree-node-item-anchor.active{
-	background-color: $commco-black-hover;
-	color:$commco-white;
-	font-weight: $sc-font-weight-semibold;
+.menu-tree-node-item-anchor.active {
+	color: $commco-red;
 }
 
-.menu-tree-node-item-icon{
-	@extend .icon-base;
-	@extend %fa-angle-down;
-	@include transition-transform(300ms ease);
-	float: right;
-	margin-top: -1px;
+.menu-tree-node-item-icon {
+	@extend .caret;
+	margin-top: -2px;
 }
 
-.open{
-	> .menu-tree-node-item-anchor{
-		background-color: $commco-black-hover;
-		color:$commco-white;
-	}
-	> .menu-tree-node-item-anchor:hover{
-		color:$commco-white;
-	}
-
-	.menu-tree-node-item-icon{
-		@include rotate(180deg);
+.open {
+	.menu-tree-node-submenu {
+		display: block;
 	}
 }
 
-.menu-tree-node-submenu-wrapper{
-	border-bottom: 1px solid  $commco-light-border;
-	padding-top: $sc-padding-lv2;
-	padding-bottom: $sc-padding-lv2;
 
-	.menu-tree-node-item-anchor{
-		background-color: $sc-neutral-shade-0;
-		padding: $sc-padding-lv2;
-		font-size: $sc-font-size-m;
+
+.menu-tree-node-submenu {
+	visibility: inherit !important;
+}
+
+.menu-tree-node-submenu.collapsing {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	transition: none !important;
+	-webkit-transition-duration: 0s !important;
+	-moz-transition-duration: 0s !important;
+	transition-duration: 0s !important;
+	height: auto !important;
+	position: inherit !important;
+	overflow: inherit !important;
+
+}
+
+.menu-tree-node-submenu-wrapper {
+
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	transition: none !important;
+	-webkit-transition-duration: 0s !important;
+	-moz-transition-duration: 0s !important;
+	transition-duration: 0s !important;
+	height: auto !important;
+
+	position: absolute;
+	padding: 4px 0 !important;
+	z-index: 1;
+	background-color: $commco-black !important;
+	-webkit-box-shadow: 0 8px 6px -3px $commco-shadow-transparent !important;
+	-moz-box-shadow: 0 8px 6px -3px $commco-shadow-transparent !important;
+	box-shadow: 0 8px 6px -3px $commco-shadow-transparent !important;
+
+	width: 180px;
+
+
+	.menu-tree-node {
+		display: block;
+		width: 100%;
+	}
+
+	.menu-tree-node-item-anchor {
+		padding: 3px $sc-padding-lv4 !important;
+		font-size: $sc-font-size-m !important;
 		text-transform: none;
-		padding: $sc-padding-lv2 $sc-padding-lv4;
-		border-bottom:none;
-		border-left:1px solid $commco-border;
-		border-right:1px solid $commco-border;
-		color: $commco-black!important;
+		color: $commco-white !important;
+		display: block;
+	}
 
-		.active {
-			font-weight: bold;
+	.menu-tree-node-item-anchor:hover {
+		background-color: $commco-white;
+		color: $commco-black !important;
+		padding: 3px $sc-padding-lv4 !important;
+	}
+}
+
+.menu-tree>.menu-tree-node {
+	@media (max-width:$screen-xs-max) {
+		width: 100% !important;
+
+		i.menu-tree-node-item-icon {
+			display: none;
+		}
+
+		div.menu-tree-node-submenu {
+			display: block !important;
+
+
+		}
+
+		div.menu-tree-node-submenu-wrapper {
+			position: static !important;
+			width: 100% !important;
+			background-color: transparent!important;
+			
+			-webkit-box-shadow: none !important;
+			-moz-box-shadow: none !important;
+			box-shadow: none !important;
+a{
+	color:$sc-color-copy!important;
+}
+a:hover{
+	color:$commco-red!important;
+}
+
 		}
 	}
-	.menu-tree-node-item-anchor:hover{
-		background-color: $commco-input;
-	}
+
 }

@@ -43,7 +43,7 @@
 }
 
 .accordion-head-toggle {
-	color: $sc-color-secondary;
+	color: $sc-color-copy;
 	font-weight: $sc-font-weight-bold;
 }
 
@@ -66,7 +66,7 @@
 	height: $sc-target-size;
 	line-height: $sc-target-size;
 	font-size: $sc-font-size-xl;
-	color: $sc-color-secondary;
+	color: inherit;
 	@include transition (transform $sc-animation-base-duration ease)
 }
 

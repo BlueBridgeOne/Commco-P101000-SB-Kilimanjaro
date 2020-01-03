@@ -111,27 +111,6 @@
 //	VALUES & TITLES ON DESKTOP
 //----------------------
 
-@media (min-width: $screen-md-min) {
-
-	.recordviews-date-header,
-	.recordviews-date {
-		text-align: right;
-	}
-	.recordviews-items-header,
-	.recordviews-items {
-		text-align: right;
-	}
-	.recordviews-currency-header,
-	.recordviews-currency {
-		text-align: right;
-	}
-
-	.recordviews-status {
-		text-align: left;
-	}
-}
-
-
 .recordviews-title{}
 .recordviews-view-anchor{color:$commco-red;}
 .recordviews-view-anchor:hover{color:$commco-red-dark;}

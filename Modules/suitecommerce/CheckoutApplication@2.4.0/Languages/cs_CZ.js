@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "Maximum je 999 znaků.",
 	"Minimum of $(0) required": "Požadováno je nejméně $(0)",
 	"No Items Yet": "Dosud žádné položky",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "Po odeslání nabídky vás během <strong>XX pracovních dní</strong> kontaktuje obchodní zástupce. Pokud potřebujete okamžitou pomoc, zavolejte nám na tel. číslo <strong>(000)-XXX-XXXX</strong> nebo zašlete e-mail na adresu <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>.",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "Po odeslání nabídky vás během <strong>XX pracovních dní</strong> kontaktuje obchodní zástupce. Pokud potřebujete okamžitou pomoc, zavolejte nám na tel. číslo <strong>+44 (0)1344 523000</strong> nebo zašlete e-mail na adresu <a href=\"mailto:hello@commco.com\">hello@commco.com</a>.",
 	"Please select at least one item": "Vyberte alespoň jednu položku.",
 	"Quote basket <span>(300)</span>": "Košík s nabídkami <span>(300)</span>",
 	"Request a Quote": "Požádat o cenovou nabídku",

@@ -49,6 +49,7 @@
 		<table class="order-history-list-recordviews-actionable-table">
 			<thead class="order-history-list-recordviews-actionable-header">
 				<tr>
+					<th></th>
 					<th class="order-history-list-recordviews-actionable-title-header">
 						<span>{{translate 'Reference'}}</span>
 					</th>

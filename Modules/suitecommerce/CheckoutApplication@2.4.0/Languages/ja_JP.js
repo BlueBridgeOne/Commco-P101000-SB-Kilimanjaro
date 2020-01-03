@@ -588,7 +588,7 @@ SC.Translations={
 	"Maximum 999 characters.": "最大999文字。",
 	"Minimum of $(0) required": "少なくとも$(0)必要",
 	"No Items Yet": "アイテムがありません",
-	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>(000)-XXX-XXXX</strong> or email us at <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>": "見積を送信後、<strong>XX営業日以内</strong>に営業担当者からご連絡を差し上げます。今すぐサポートが必要な場合は、<strong>（000）-XXX-XXXX</strong>までお電話いただくか、<a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>までメールでご連絡ください",
+	"Once your quote has been submitted, a sales representative will contact you in <strong>XX business days</strong>. For immediate assistance call us at <strong>+44 (0)1344 523000</strong> or email us at <a href=\"mailto:hello@commco.com\">hello@commco.com</a>": "見積を送信後、<strong>XX営業日以内</strong>に営業担当者からご連絡を差し上げます。今すぐサポートが必要な場合は、<strong>（000）-XXX-XXXX</strong>までお電話いただくか、<a href=\"mailto:hello@commco.com\">hello@commco.com</a>までメールでご連絡ください",
 	"Please select at least one item": "少なくとも1件のアイテムを選択してください",
 	"Quote basket <span>(300)</span>": "引用バスケット<span>（300）</span>",
 	"Request a Quote": "見積リクエスト",

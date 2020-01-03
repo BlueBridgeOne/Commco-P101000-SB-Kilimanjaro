@@ -23,7 +23,7 @@
 	        "title": "Disclaimer summary",
 	        "nsType": "textarea",
 	        "description": "Enter the sales representative disclaimer summary that appears under the Order Summary area of the Quote Details page. This message appears if no sales representative is assigned to the quote.",
-	        "default": "To place the order please contact <strong>Contact Center</strong> at <strong>(000)-XXX-XXXX</strong> or send an email to <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>"
+	        "default": "To place the order please contact <strong>Contact Center</strong> at <strong>+44 (0)1344 523000</strong> or send an email to <a href=\"mailto:hello@commco.com\">hello@commco.com</a>"
 	    }
 	,	"quote.disclaimer": {
         	"group": "myAccountApp",
@@ -32,7 +32,7 @@
 	        "title": "Disclaimer",
 	        "nsType": "textarea",
 	        "description": "Enter the sales representative information disclaimer that appears at the bottom of the Quote Details page. This message appears if no sales representative is assigned to the quote.",
-	        "default": "For immediate assistance contact <strong>Contact Center</strong> at <strong>(000)-XXX-XXXX</strong> or send an email to <a href=\"mailto:xxxx@xxxx.com\">xxxx@xxxx.com</a>"
+	        "default": "For immediate assistance contact <strong>Contact Center</strong> at <strong>+44 (0)1344 523000</strong> or send an email to <a href=\"mailto:hello@commco.com\">hello@commco.com</a>"
 	    }
 	,	"quote.defaultPhone": {
         	"group": "myAccountApp",
@@ -40,7 +40,7 @@
 	        "type": "string",
 	        "title": "Default phone for Sales Rep",
 	        "description": "Enter the default sales representative phone number. This phone number appears on the Quote Details page if a sales associate is assigned to the quote, but the phone number has not been assigned.",
-	        "default": "(000)-XXX-XXXX"
+	        "default": "+44 (0)1344 523000"
 	    }
 	,	"quote.defaultEmail": {
         	"group": "myAccountApp",
@@ -48,7 +48,7 @@
 	        "type": "string",
 	        "title": "Default email for Sales Rep",
 	        "description": "Enter the default sales representative Email address. This email address appears on the Quote Details page if a sales associate is assigned to the quote, but the email address has not been assigned.",
-	        "default": "xxxx@xxxx.com"
+	        "default": "hello@commco.com"
 	    }
     }
 }

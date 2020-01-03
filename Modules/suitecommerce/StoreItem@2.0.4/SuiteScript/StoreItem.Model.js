@@ -142,7 +142,12 @@ define(
 			else
 			{
 				// Sitebuilder website version doesn't have fieldsets
+				try{
 				return ModelsInit.session.getItemFieldValues(item_ids);
+				}catch(err){
+					nlapiLogExecution("ERROR","getItemFieldValues "+JSON.stringify(item_ids),err);
+					return {};
+				}
 			}
 		}
 

@@ -19,14 +19,19 @@
 		
 		"suitecommerce/MyAccountApplication@3.2.0/internal/index-local.ssp": "internal/index-local.ssp",
 		"suitecommerce/MyAccountApplication@3.2.0/SuiteScript/my_account.ssp": "SuiteScript/my_account.ssp",
+		"suitecommerce/MyAccountApplication@3.2.0/Sass/_myaccount-layout-sb.scss": "Sass/_myaccount-layout-sb.scss",
 		"suitecommerce/Transaction@1.4.1/SuiteScript/Transaction.Model.js": "SuiteScript/Transaction.Model.js",
 		"suitecommerce/ReorderItems@3.0.1/SuiteScript/ReorderItems.Model.js": "SuiteScript/ReorderItems.Model.js",
 		"suitecommerce/OrderHistory@5.0.1/Templates/order_history_list.tpl": "Templates/order_history_list.tpl",
+		"suitecommerce/OrderHistory@5.0.1/Templates/order_history_details.tpl": "Templates/order_history_details.tpl",
 		"suitecommerce/OrderHistory@5.0.1/JavaScript/OrderHistory.List.View.js": "JavaScript/OrderHistory.List.View.js",
 		"suitecommerce/Quote@4.0.1/Templates/quote_list.tpl": "Templates/quote_list.tpl",
+		"suitecommerce/Quote@4.0.1/Templates/quote_details.tpl": "Templates/quote_details.tpl",
 		"suitecommerce/Quote@4.0.1/JavaScript/Quote.List.View.js": "JavaScript/Quote.List.View.js",
+		"suitecommerce/Quote@4.0.1/JavaScript/Quote.Collection.js": "JavaScript/Quote.Collection.js",
 		"suitecommerce/Invoice@3.3.0/Templates/invoice_open_list.tpl": "Templates/invoice_open_list.tpl",
 		"suitecommerce/Invoice@3.3.0/Templates/invoice_paid_list.tpl": "Templates/invoice_paid_list.tpl",
+		"suitecommerce/Invoice@3.3.0/Templates/invoice_details.tpl": "Templates/invoice_details.tpl",
 		"suitecommerce/Invoice@3.3.0/JavaScript/Invoice.OpenList.View.js": "JavaScript/Invoice.OpenList.View.js",
 		"suitecommerce/Invoice@3.3.0/JavaScript/Invoice.PaidList.View.js": "JavaScript/Invoice.PaidList.View.js",
 		"suitecommerce/TransactionHistory@3.2.1/Templates/transaction_history_list.tpl": "Templates/transaction_history_list.tpl",
@@ -38,8 +43,18 @@
 		"suitecommerce/Transaction.Line.Views@1.2.1/JavaScript/Transaction.Line.Views.Cell.Navigable.Actionable.View.js": "JavaScript/Transaction.Line.Views.Cell.Navigable.Actionable.View.js",
 		"suitecommerce/Transaction.Line.Views@1.2.1/JavaScript/Transaction.Line.Views.Cell.Navigable.View.js": "JavaScript/Transaction.Line.Views.Cell.Navigable.View.js",
 		"suitecommerce/RecordViews@2.0.1/Templates/recordviews.tpl": "Templates/recordviews.tpl",
+		"suitecommerce/RecordViews@2.0.1/Templates/recordviews_actionable.tpl": "Templates/recordviews_actionable.tpl",
 		"suitecommerce/RecordViews@2.0.1/JavaScript/RecordViews.View.js": "JavaScript/RecordViews.View.js",
-		"suitecommerce/Balance@2.1.3/Templates/balance.tpl": "Templates/balance.tpl"
+		"suitecommerce/RecordViews@2.0.1/JavaScript/RecordViews.Actionable.View.js": "JavaScript/RecordViews.Actionable.View.js",
+		"suitecommerce/Balance@2.1.3/Templates/balance.tpl": "Templates/balance.tpl",
+		"suitecommerce/Profile@3.0.1/Templates/profile_information.tpl": "Templates/profile_information.tpl",
+		"suitecommerce/Profile@3.0.1/JavaScript/Profile.Information.View.js": "JavaScript/Profile.Information.View.js",
+		"suitecommerce/Profile@3.0.1/SuiteScript/Profile.Model.js": "SuiteScript/Profile.Model.js",
+		"suitecommerce/ReorderItems@3.0.1/JavaScript/ReorderItems.js": "JavaScript/ReorderItems.js",
+		"suitecommerce/Item@1.0.3/JavaScript/Item.Model.js": "JavaScript/Item.Model.js",
+		"suitecommerce/ReturnAuthorization@4.0.1/Templates/return_authorization_list.tpl": "Templates/return_authorization_list.tpl",
+		"suitecommerce/ReturnAuthorization@4.0.1/JavaScript/ReturnAuthorization.List.View.js": "JavaScript/ReturnAuthorization.List.View.js",
+		"suitecommerce/MenuTree@2.1.4/JavaScript/MenuTree.View.js": "JavaScript/MenuTree.View.js"
 
 	}
 }

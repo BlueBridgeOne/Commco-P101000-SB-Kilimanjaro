@@ -25,8 +25,12 @@
 				<table class="transaction-history-list-results-table">
 					<thead class="transaction-history-list-headers">
 						<tr>
+							<th></th>
 							<th class="transaction-history-list-headers-number">
 								<span>{{translate 'Reference'}}</span>
+							</th>
+							<th class="transaction-history-list-headers-number">
+								<span>{{translate 'Transaction Title'}}</span>
 							</th>
 							<th class="transaction-history-list-headers-date">
 								<span>{{translate 'Date'}}</span>

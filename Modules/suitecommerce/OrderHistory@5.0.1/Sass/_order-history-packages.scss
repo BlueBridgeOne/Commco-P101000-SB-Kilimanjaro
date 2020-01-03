@@ -95,7 +95,7 @@
 
 .order-history-packages-items-table{
 	@extend .transaction-line-views-cell-actionable-table;
-
+border-color:transparent;
 	.item-view-actionable-selected-option-cell {
 		padding-left: 0;
 	}

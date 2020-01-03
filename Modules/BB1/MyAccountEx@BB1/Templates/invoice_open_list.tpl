@@ -23,17 +23,6 @@
 			<span class="invoice-open-list-header-button-open">{{translate 'Open'}}</span>
 			<a href="/paid-invoices" class="invoice-open-list-header-button-paid">{{translate 'Paid in Full'}}</a>
 		</div>
-
-		{{#if showMakeAPaymentButton}}
-			<a data-permissions="transactions.tranCustPymt.2, transactions.tranCustInvc.1" data-type="make-a-payment" class="invoice-open-list-button-payment"
-			{{#if enableMakeAPaymentButton}}href="/make-a-payment"{{else}}disabled{{/if}}>
-				{{#if enableMakeAPaymentButton}}
-					{{translate 'Make a Payment'}}
-				{{else}}
-					{{translate '0 Invoices Selected'}}
-				{{/if}}
-			</a>
-		{{/if}}
 	</div>
 
 	<div data-view="ListHeader"></div>

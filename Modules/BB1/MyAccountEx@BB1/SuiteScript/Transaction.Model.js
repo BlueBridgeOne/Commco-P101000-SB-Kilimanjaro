@@ -53,7 +53,7 @@ define(
 				//@return {Transaction.Model.List.Result}
 				,
 			list: function (data) {
-					var customColumns = ["custbody_bb1_so_title", "otherrefnum"];
+					var customColumns = ["custbody_bb1_so_title", "otherrefnum","title"];
 
 
 					this.preList();
