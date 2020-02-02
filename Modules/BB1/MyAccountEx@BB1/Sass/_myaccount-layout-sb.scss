@@ -7,26 +7,26 @@
 
 .myaccount-layout {
 	@extend %sc-layout;
-	padding-top:$sc-margin-lv2;
+	padding-top: $sc-margin-lv2;
 }
 
-.myaccount-layout-container{
+.myaccount-layout-container {
 	// Footer module will set a bottom padding with the size of the footer	(on Footer.View.js)
 	@extend .container;
 }
 
 .myaccount-layout-header {
 	@include box-shadow(3px 0px 6px $sc-color-secondary);
-  margin-bottom: $sc-margin-lv5;
+	margin-bottom: $sc-margin-lv5;
 }
 
-.myaccount-layout-row{
+.myaccount-layout-row {
 	@extend .row;
 }
 
-.myaccount-layout-main{
+.myaccount-layout-main {
 
-	@media (min-width: $screen-sm-min){
+	@media (min-width: $screen-sm-min) {
 		margin-bottom: 70px;
 	}
 }
@@ -35,11 +35,11 @@
 	@extend %sc-footer !optional;
 }
 
-.myaccount-layout-title{
+.myaccount-layout-title {
 	margin-bottom: $sc-margin-lv4;
-	display:none;
+	display: none;
 
-	@media (min-width: $screen-sm-min){
+	@media (min-width: $screen-sm-min) {
 		display: block;
 	}
 }
@@ -49,23 +49,63 @@
 	width: 100%;
 }
 
-.myaccount-layout-side-nav{
+.myaccount-layout-side-nav {
 
-	
+
 	display: block;
 }
 
-.force-hide-side-nav{
+.force-hide-side-nav {
 
-	.myaccount-layout-side-nav{
+	.myaccount-layout-side-nav {
 		display: none;
 	}
 
-	.myaccount-layout-title{
+	.myaccount-layout-title {
 		display: none;
 	}
 
-	.myaccount-layout-main{
+	.myaccount-layout-main {
 		@extend .col-sm-12;
+	}
+}
+
+.menu-drop-button {
+	@extend .button-medium;
+	@extend .pill-button;
+	display: none;
+	margin-bottom: $sc-margin-lv2;
+	outline: none;
+}
+
+@media (max-width: $screen-xs-max) {
+	.open-menu {
+		display: block !important;
+	}
+
+	.menu-tree {
+		z-index:1000;
+		display: none;
+		position: absolute;
+		background-color: #F8F8F8;
+		border-top: 1px solid $commco-light-border;
+		border-bottom: 1px solid $commco-light-border;
+		box-shadow: 0 $sc-flyout-arrow-shadow-height $sc-flyout-arrow-shadow-height * 2 transparentize($sc-neutral-shade-600, 1-0.175);
+		margin-left: -$sc-margin-lv3;
+		margin-right: -$sc-margin-lv3;
+		margin-top: -$sc-margin-lv1;
+
+		&>div.menu-tree-node>a {
+			display: block;
+			padding: $sc-padding-lv1 $sc-padding-lv2;
+			background-color:$commco-black;
+			color:$commco-input!important;
+
+		}
+	}
+
+	.menu-drop-button {
+
+		display: block;
 	}
 }

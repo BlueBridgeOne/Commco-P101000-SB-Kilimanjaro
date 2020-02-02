@@ -5,48 +5,66 @@
 	may use this code subject to the terms that govern your access and use.
 */
 
-.login-register-header{
+.login-register-header {
 	@extend .row;
 	margin-bottom: $sc-margin-lv4;
 }
 
-.login-title{
+.login-title {
 	@extend .col-xs-12;
-	text-align:center;
+	text-align: center;
 }
 
-.login-register-body{
+.login-register-body {
 	@extend .row;
 }
 
-.login-register-wrapper-column-login{
-	width:100%;
-	text-align:center;
+.login-register-wrapper-column-login {
+	width: 100%;
+	text-align: center;
 }
 
 .login-register-wrapper-login,
-.login-register-wrapper-register{
+.login-register-wrapper-register {
 	@extend .box-column;
-	display:inline-block;
-	text-align:left;
+	display: inline-block;
+	text-align: left;
 }
 
-.login-register-wrapper-guest{}
-.login-register-title-register{}
+.login-register-wrapper-guest {}
 
-.login-register-login-form-input{width:100%!important;}
-.login-register-login-icon{text-align:center;}
+.login-register-title-register {}
 
-.login-register-background{
-	position:fixed;
-	left:0;top:0;
-	width:100%;height:100%;
-	background-image:url('/assets/img/svg/login-splash-page-v2.svg');
+.login-register-login-form-input {
+	width: 100% !important;
+}
+
+.login-register-login-icon {
+	text-align: center;
+}
+
+.login-register-background {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('/assets/img/svg/login-splash-page-v2.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-.login-register-foreground{
-	position:relative;
-	z-index:1;
+
+.login-register-foreground {
+	z-index: 1;
+	position: relative;
+
+	@media (min-width: $screen-sm-min) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		margin: 0;
+		padding: 0;
+	}
 }

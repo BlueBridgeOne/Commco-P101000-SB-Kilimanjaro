@@ -128,7 +128,7 @@ define(
 				//@property {Boolean} isAddressCollectionLengthGreaterThan0
 			,	isAddressCollectionLengthGreaterThan0: this.collection.length > 0
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 			};
 		}
 	});

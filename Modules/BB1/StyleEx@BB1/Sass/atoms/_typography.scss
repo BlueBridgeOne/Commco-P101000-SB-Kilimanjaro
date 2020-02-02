@@ -8,6 +8,7 @@
 body {
     @extend %scroll-y;
     font-size: $sc-font-size-m;
+    min-height: 100vh;
 }
 
 // Font styles

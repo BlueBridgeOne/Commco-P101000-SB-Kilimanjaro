@@ -311,7 +311,7 @@ define('CreditCard.Edit.View'
 				//@property {Boolean} showHeader
 			,	showHeader: !this.options.hideHeader
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD' && !this.options.hideHeader
+			,	showBackToAccount: false && !this.options.hideHeader
 			};
 		}
 	});

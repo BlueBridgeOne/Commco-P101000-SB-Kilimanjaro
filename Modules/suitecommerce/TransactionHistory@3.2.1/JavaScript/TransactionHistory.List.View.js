@@ -255,7 +255,7 @@ define(
 				// @property {Boolean} showCurrentPage
 			,	showCurrentPage: this.options.showCurrentPage
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 			};
 		}
 	});

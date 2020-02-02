@@ -265,7 +265,7 @@ define(
 				// @property {Boolean} isLoading
 			,	isLoading: this.isLoading
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 			};
 			// @class Quote.List.View
 		}

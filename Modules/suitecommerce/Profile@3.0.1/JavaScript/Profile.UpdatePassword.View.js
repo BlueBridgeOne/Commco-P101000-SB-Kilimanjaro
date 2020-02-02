@@ -108,7 +108,7 @@ define(
 				// @property {String} pageHeader 
 				pageHeader: this.page_header
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 			};
 		}
 	});

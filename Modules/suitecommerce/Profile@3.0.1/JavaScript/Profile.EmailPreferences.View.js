@@ -142,7 +142,7 @@ define(
 				// @property {Boolean} campaignSubscriptions
 			,	campaignSubscriptions: !!(Configuration.get('siteSettings.campaignsubscriptions') && campaign_subscriptions.length)
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 			};
 		}
 	});

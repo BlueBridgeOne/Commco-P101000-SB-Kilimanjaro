@@ -258,7 +258,7 @@ define('OrderHistory.List.View', ['SC.Configuration', 'GlobalViews.Pagination.Vi
 				showCurrentPage: this.options.showCurrentPage
 					//@property {Boolean} showBackToAccount
 					,
-				showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+				showBackToAccount: false
 					//@property {Boolean} isSCISIntegrationEnabled
 					,
 				isSCISIntegrationEnabled: this.isSCISIntegrationEnabled

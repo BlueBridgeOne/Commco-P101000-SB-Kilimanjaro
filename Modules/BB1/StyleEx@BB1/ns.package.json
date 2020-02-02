@@ -19,6 +19,7 @@
 		"suitecommerce/BaseSassStyles@3.0.0/Sass/variables/_colors.scss": "Sass/variables/_colors.scss",
 		"suitecommerce/BaseSassStyles@3.0.0/Sass/base/_spacing.scss": "Sass/base/_spacing.scss",
 		"suitecommerce/BaseSassStyles@3.0.0/Sass/base/_lists.scss": "Sass/base/_lists.scss",
+		"suitecommerce/BaseSassStyles@3.0.0/Sass/base/_bootstrap-overrides.scss": "Sass/base/_bootstrap-overrides.scss",
 		"suitecommerce/BaseSassStyles@3.0.0/Sass/atoms/_buttons.scss": "Sass/atoms/_buttons.scss",
 		"suitecommerce/BaseSassStyles@3.0.0/Sass/atoms/_forms.scss": "Sass/atoms/_forms.scss",
 		"suitecommerce/BaseSassStyles@3.0.0/Sass/atoms/_typography.scss": "Sass/atoms/_typography.scss",

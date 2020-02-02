@@ -142,7 +142,6 @@ nlapiLogExecution("debug","profile logo",err);
 					altphone: data.altphone
 				,	phone: data.phone
 				,	fax: data.fax
-				,	altphone: data.altphone
 			};
 			if(data.altphone !== '')
 			{

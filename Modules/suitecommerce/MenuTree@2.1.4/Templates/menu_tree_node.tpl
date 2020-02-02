@@ -23,7 +23,7 @@
 
 <div class="menu-tree-node" data-type="menu-tree-node" data-permissions="{{node.permission}}" data-permissions-operator="{{node.permissionOperator}}">
 
-	<a class="menu-tree-node-item-anchor" href="{{node.url}}" target="{{node.target}}" data-id="{{node.id}}">{{translate node.name}}</a>
+	<a class="menu-tree-node-item-anchor" href="{{node.url}}" target="{{node.target}}" data-id="{{node.id}}" {{#if node.navigation}}data-navigation="{{node.navigation}}"{{/if}}>{{translate node.name}}</a>
 
 </div>
 

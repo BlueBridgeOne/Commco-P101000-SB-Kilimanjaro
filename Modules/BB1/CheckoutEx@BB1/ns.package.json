@@ -7,8 +7,8 @@
 		]
 	},
 	"ssp-files": {
-			"SuiteScript/checkout.ssp": "checkout.ssp",
-			"Internal/index-local.ssp": "checkout-local.ssp"
+			"SuiteScript/checkout.ssp": "c.ssp",
+			"Internal/index-local.ssp": "c-local.ssp"
 	},
 	"overrides":
 	{

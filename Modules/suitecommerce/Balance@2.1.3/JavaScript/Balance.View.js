@@ -97,7 +97,7 @@ define('Balance.View'
 				//@property {Boolean} livePaymentHaveInvoices
 			,	livePaymentHaveInvoices: !!live_payment.get('invoices').length
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 			};
 		}
 	});

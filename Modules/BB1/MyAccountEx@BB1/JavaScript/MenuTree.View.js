@@ -65,7 +65,8 @@ define('MenuTree.View', [
 
 			,
 		events: {
-			'click [data-action="expander"]': 'menuClick'
+			'click [data-action="expander"]': 'menuClick',
+			'click [data-action="toggle-menu"]': 'menuToggle'
 		}
 
 		// @method initialize
@@ -78,8 +79,10 @@ define('MenuTree.View', [
 		render: function () {
 				this.fixedMenuItems = this.getFixedMenuItems();
 				Backbone.View.prototype.render.apply(this, arguments);
+			},
+			menuToggle: function (e) {
+jQuery("#mainmenu").toggleClass("open-menu");
 			}
-
 			// @method menuClick Note: cant use bootstrap collapse due to the divs introduced by collection view. @param {HTMLEvent} e
 			,
 		menuClick: function (e, synthetic) {
@@ -94,7 +97,7 @@ define('MenuTree.View', [
 				if (!isOpen) {
 					this_expandable.addClass('open');
 				}
-
+				
 			}
 
 			// @method updateSidebar @param {String} label
@@ -123,6 +126,7 @@ define('MenuTree.View', [
 					all_expandables.removeClass('open');
 					jQuery.fn.collapse.call(open_expanders, 'hide');
 				}
+				jQuery("#mainmenu").removeClass("open-menu");
 			}
 
 			// @method getFixedMenuItems @return {Array<Object>}

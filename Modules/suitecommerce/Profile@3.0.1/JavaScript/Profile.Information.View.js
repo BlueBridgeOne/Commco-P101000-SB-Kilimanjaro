@@ -147,7 +147,7 @@ define(
 				// @property {String} phone
 			,	phone: this.model.get('phone') || ''
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 			};
 		}
 	});

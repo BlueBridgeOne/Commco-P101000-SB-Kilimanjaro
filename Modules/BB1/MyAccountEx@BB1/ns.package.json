@@ -20,6 +20,7 @@
 		"suitecommerce/MyAccountApplication@3.2.0/internal/index-local.ssp": "internal/index-local.ssp",
 		"suitecommerce/MyAccountApplication@3.2.0/SuiteScript/my_account.ssp": "SuiteScript/my_account.ssp",
 		"suitecommerce/MyAccountApplication@3.2.0/Sass/_myaccount-layout-sb.scss": "Sass/_myaccount-layout-sb.scss",
+		"suitecommerce/MyAccountApplication@3.2.0/JavaScript/SC.MyAccount.Layout.js": "JavaScript/SC.MyAccount.Layout.js",
 		"suitecommerce/Transaction@1.4.1/SuiteScript/Transaction.Model.js": "SuiteScript/Transaction.Model.js",
 		"suitecommerce/ReorderItems@3.0.1/SuiteScript/ReorderItems.Model.js": "SuiteScript/ReorderItems.Model.js",
 		"suitecommerce/OrderHistory@5.0.1/Templates/order_history_list.tpl": "Templates/order_history_list.tpl",
@@ -38,6 +39,7 @@
 		"suitecommerce/TransactionHistory@3.2.1/JavaScript/TransactionHistory.List.View.js": "JavaScript/TransactionHistory.List.View.js",
 		"suitecommerce/Overview@1.1.3/Templates/overview_home.tpl": "Templates/overview_home.tpl",
 		"suitecommerce/Overview@1.1.3/JavaScript/Overview.Home.View.js": "JavaScript/Overview.Home.View.js",
+		"suitecommerce/Overview@1.1.3/JavaScript/Overview.js": "JavaScript/Overview.js",
 		"suitecommerce/Transaction.Line.Views@1.2.1/Templates/transaction_line_views_cell_navigable.tpl": "Templates/transaction_line_views_cell_navigable.tpl",
 		"suitecommerce/Transaction.Line.Views@1.2.1/Templates/transaction_line_views_cell_actionable.tpl": "Templates/transaction_line_views_cell_actionable.tpl",
 		"suitecommerce/Transaction.Line.Views@1.2.1/JavaScript/Transaction.Line.Views.Cell.Navigable.Actionable.View.js": "JavaScript/Transaction.Line.Views.Cell.Navigable.Actionable.View.js",
@@ -54,7 +56,9 @@
 		"suitecommerce/Item@1.0.3/JavaScript/Item.Model.js": "JavaScript/Item.Model.js",
 		"suitecommerce/ReturnAuthorization@4.0.1/Templates/return_authorization_list.tpl": "Templates/return_authorization_list.tpl",
 		"suitecommerce/ReturnAuthorization@4.0.1/JavaScript/ReturnAuthorization.List.View.js": "JavaScript/ReturnAuthorization.List.View.js",
-		"suitecommerce/MenuTree@2.1.4/JavaScript/MenuTree.View.js": "JavaScript/MenuTree.View.js"
+		"suitecommerce/MenuTree@2.1.4/JavaScript/MenuTree.View.js": "JavaScript/MenuTree.View.js",
+		"suitecommerce/MenuTree@2.1.4/Templates/menu_tree.tpl": "Templates/menu_tree.tpl",
+		"suitecommerce/Case@2.3.1/JavaScript/Case.js": "JavaScript/Case.js"
 
 	}
 }

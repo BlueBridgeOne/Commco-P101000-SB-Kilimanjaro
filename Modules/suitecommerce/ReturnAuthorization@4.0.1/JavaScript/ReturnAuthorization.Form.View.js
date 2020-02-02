@@ -472,7 +472,7 @@ define('ReturnAuthorization.Form.View'
 				//@property {String} comments
 			,	comments: this.comments || ''
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 			};
 		}
 	});

@@ -266,7 +266,7 @@ define('OrderHistory.List.View'
 				// @property {Boolean} showCurrentPage
 			,	showCurrentPage: this.options.showCurrentPage
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 				//@property {Boolean} isSCISIntegrationEnabled
 			,	isSCISIntegrationEnabled: this.isSCISIntegrationEnabled
 				//@property {Boolean} allIsActive

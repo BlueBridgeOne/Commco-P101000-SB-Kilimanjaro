@@ -81,9 +81,9 @@
 				<div class="profile-information-row" data-input="altphone" data-validation="control-group">
 					<label class="profile-information-label" for="altphone">
 						{{#if phoneFormat}}
-							{{translate 'Alt. Phone (ex/$(0))' phoneFormat}}
+							{{translate 'Mobile Phone Number (ex/$(0))' phoneFormat}}
 						{{else}}
-							{{translate 'Alt. Phone'}}
+							{{translate 'Mobile Phone Number'}}
 						{{/if}}
 						
 							<small class="profile-information-input-optional">{{translate '(optional)'}}</small>

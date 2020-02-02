@@ -17,6 +17,14 @@
 		line-height: normal;
 		padding: 0;
 	}
+	@media (max-width: $screen-sm-max) {
+		border-bottom: 1px solid $commco-light-border;
+	}
+}
+.recordviews-actionable {
+@media (max-width: $screen-sm-max) {
+	border-bottom: 1px solid $commco-light-border;
+}
 }
 
 .recordviews-row:hover {
@@ -53,6 +61,7 @@
 .recordviews-header {
 	// padding-right: $table-condensed-cell-padding;
 	// padding-left: $table-condensed-cell-padding;
+	text-align: left;
 }
 
 .recordviews-date-header,

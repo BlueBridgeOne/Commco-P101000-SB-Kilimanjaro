@@ -130,7 +130,7 @@ define(
 				// @property {Array<Object{text:String,id:Number}>} categories
 			,	categories: this.fields.get('categories')
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 			};
 		}
 	});

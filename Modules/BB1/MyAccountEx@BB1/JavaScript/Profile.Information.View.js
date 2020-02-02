@@ -150,7 +150,7 @@ define(
 			// @property {String} phone
 			,	altphone: this.model.get('altphone') || ''
 				//@property {Boolean} showBackToAccount
-			,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+			,	showBackToAccount: false
 			};
 		}
 	});

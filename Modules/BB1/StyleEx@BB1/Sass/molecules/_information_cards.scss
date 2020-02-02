@@ -30,6 +30,15 @@
 .product-line-stock-msg-not-available {
 	display: none;
 }
+.overview-home-mysettings-shipping{
+	a{
+		visibility:hidden;
+	}
+}
+.myaccount-layout-row,.balance-content,.print-statement,.profile-information,.creditcard-edit,.case-new,.address-list,.profile-emailpreferences,.overview-home-mysettings,.list-header-view-accordion-body{
+	margin-left:0!important;
+	margin-right:0!important;
+}
 
 
 .modal-backdrop {
@@ -102,13 +111,6 @@
 
 .menu-tree-node-submenu-wrapper {
 	padding: 0 !important;
-}
-
-@media (max-width: $screen-xs-max) {
-	.myaccount-layout-row {
-		margin-left: 0px !important;
-		margin-right: 0px !important;
-	}
 }
 
 .case-detail-conversation-background {

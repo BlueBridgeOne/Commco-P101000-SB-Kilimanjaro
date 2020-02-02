@@ -491,7 +491,7 @@ define(
 					//@property {Boolean} enableMakeAPaymentButton
 				,	enableMakeAPaymentButton: this.getSelectedInvoicesLength() > 0
 					//@property {Boolean} showBackToAccount
-				,	showBackToAccount: Configuration.get('siteSettings.sitetype') === 'STANDARD'
+				,	showBackToAccount: false
 			};
 		}
 	});
