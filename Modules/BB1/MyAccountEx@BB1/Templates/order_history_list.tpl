@@ -53,15 +53,16 @@
 					<th class="order-history-list-recordviews-actionable-title-header">
 						<span>{{translate 'Reference'}}</span>
 					</th>
+					<th class="order-history-list-recordviews-actionable-date-header">
+						<span>{{translate 'Date'}}</span>
+					</th>
 					<th class="order-history-list-recordviews-actionable-title-header">
 						<span>{{translate 'Transaction Title'}}</span>
 					</th>
 					<th class="order-history-list-recordviews-actionable-currency-header">
 						<span>{{translate 'Amount'}}</span>
 					</th>
-					<th class="order-history-list-recordviews-actionable-date-header">
-						<span>{{translate 'Date'}}</span>
-					</th>
+					
 					<th class="order-history-list-recordviews-actionable-date-header">
 						<span>{{translate 'PO#'}}</span>
 					</th>

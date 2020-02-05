@@ -28,6 +28,13 @@ define('Overview', [
 								name: _('Overview').translate(),
 								url: 'overview',
 								index: 1
+							}, {
+								parent: 'cases',
+								id: 'logout',
+								name: _('Logout').translate(),
+								url: SC.SESSION.touchpoints.logout.substring(1),
+								index: 3,
+								"navigation":"ignore-click"
 							}]
 						};
 					} else {

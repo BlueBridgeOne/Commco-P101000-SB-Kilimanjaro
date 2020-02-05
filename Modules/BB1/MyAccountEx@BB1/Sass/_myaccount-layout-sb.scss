@@ -72,7 +72,8 @@
 
 .menu-drop-button {
 	@extend .button-medium;
-	@extend .pill-button;
+	@extend .button-secondary;
+	width:auto;
 	display: none;
 	margin-bottom: $sc-margin-lv2;
 	outline: none;

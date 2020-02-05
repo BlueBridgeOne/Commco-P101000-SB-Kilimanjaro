@@ -44,13 +44,6 @@ define(
 						name: _('Submit New Case').translate(),
 						url: 'newcase',
 						index: 2
-					}, {
-						parent: 'cases',
-						id: 'logout',
-						name: _('Logout').translate(),
-						url: SC.SESSION.touchpoints.logout.substring(1),
-						index: 3,
-						"navigation":"ignore-click"
 					}]
 
 				};

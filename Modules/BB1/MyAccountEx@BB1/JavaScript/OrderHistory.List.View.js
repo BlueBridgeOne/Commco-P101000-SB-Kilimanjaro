@@ -177,6 +177,11 @@ define('OrderHistory.List.View', ['SC.Configuration', 'GlobalViews.Pagination.Vi
 						}
 
 						var columns = [{
+							label: _('Date:').translate(),
+							type: 'date',
+							name: 'date',
+							value: order.get('trandate')
+						}, {
 								label: _('Transaction Title:').translate(),
 								type: 'status',
 								name: 'custbody_bb1_so_title',
@@ -188,11 +193,6 @@ define('OrderHistory.List.View', ['SC.Configuration', 'GlobalViews.Pagination.Vi
 								value: order.get('amount_formatted')
 							},
 							{
-								label: _('Date:').translate(),
-								type: 'date',
-								name: 'date',
-								value: order.get('trandate')
-							}, {
 								label: _('PO #:').translate(),
 								type: 'status',
 								name: 'otherrefnum',

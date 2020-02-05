@@ -33,7 +33,19 @@ define(['N/record', 'N/search'],
 
             var currentRecord = scriptContext.newRecord;
             var comments = currentRecord.getValue({
-                fieldId: 'custentity_comments'
+                fieldId: 'comments'
+            });
+            // if (scriptContext.type == scriptContext.UserEventType.CREATE) {
+
+            //     currentRecord.setValue({
+            //         fieldId: 'comments',
+            //         value:comments,
+            //         ignoreFieldChange:true
+            //     });
+            // }
+            comments = comments.toLowerCase();
+            var email = currentRecord.getValue({
+                fieldId: 'email'
             }).toLowerCase();
             var isinactive = currentRecord.getValue({
                 fieldId: 'isinactive'
@@ -194,14 +206,14 @@ define(['N/record', 'N/search'],
                 spam.push("optimize your facebook page");
                 spam.push("howtoinvest");
                 spam.push("bestinvest");
-                spam.push( "google 1st page");
+                spam.push("google 1st page");
                 spam.push("roulette");
                 spam.push("click on the link below to qualify");
                 spam.push("sexywoman");
                 spam.push("get your ticket for");
                 spam.push("ttps://clck.ru");
                 spam.push("money from home");
-                
+
 
 
                 for (var i = 0; i < spam.length; i++) {
@@ -211,11 +223,14 @@ define(['N/record', 'N/search'],
                             value: true,
                             ignoreFieldChange: true
                         });
-                        log.debug("SPAM", "Detected spam phrase '" + spam[i] + "' in record #" + currentRecord.id + ".");
 
-                        if (scriptContext.type == scriptContext.UserEventType.CREATE){
-                            log.debug("SPAM", "Throw error.");
-                            throw(new Error("Unable to save, this record looks like spam."));
+
+                        if (scriptContext.type == scriptContext.UserEventType.CREATE) {
+
+                            log.debug("SPAM", "Detected spam phrase '" + spam[i] + "'.");
+
+                            log.debug("SPAM", email + " " + comments);
+                            throw (new Error("Unable to continue, this message looks like spam."));
                         }
                         break;
                     }

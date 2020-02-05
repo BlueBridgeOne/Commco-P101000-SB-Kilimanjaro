@@ -67,7 +67,9 @@ define(
 					this.filters = {
 						'entity': ['entity', 'is', nlapiGetUser()],
 						'mainline_operator': 'and',
-						'mainline': ['mainline', 'is', 'T']
+						'mainline': ['mainline', 'is', 'T'],
+						'amount_operator': 'and',
+						'amount':[this.amountField,'greaterthan',0]
 					};
 
 					this.columns = {
