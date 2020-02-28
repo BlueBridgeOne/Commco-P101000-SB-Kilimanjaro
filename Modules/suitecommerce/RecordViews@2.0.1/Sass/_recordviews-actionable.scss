@@ -29,6 +29,21 @@
 	td {
 		vertical-align: middle;
 	}
+	th{
+		font-weight:bold!important;
+	}
+
+	
+}
+
+tbody{
+	tr.recordviews-actionable:last-child{
+
+		@media (min-width: $screen-md-min) {
+			border-bottom:1px solid $commco-light-border;
+		}
+
+	}
 }
 
 .recordviews-actionable-header {

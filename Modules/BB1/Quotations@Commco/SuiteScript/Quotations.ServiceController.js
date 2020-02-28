@@ -1,23 +1,20 @@
-define('Quotations.ServiceController'
-, [
-    'ServiceController'
-  , 'Quotations.Model'
-  ]
-, function
-  (
-    ServiceController
-  , QuotationsModel
-  )
-{
+define('Quotations.ServiceController', [
+  'ServiceController', 'Quotations.Model'
+], function (
+  ServiceController, QuotationsModel
+) {
   'use strict';
 
   return ServiceController.extend({
     name: 'Quotations.ServiceController'
 
-  , get: function ()
-    {
+      ,
+    get: function () {
       var id = this.request.getParameter('internalid');
       return id ? QuotationsModel.get(id) : QuotationsModel.list()
+    },
+    put: function () {
+      return QuotationsModel.put(this.data);
     }
   })
 });

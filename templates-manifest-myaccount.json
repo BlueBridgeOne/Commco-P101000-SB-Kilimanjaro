@@ -167,5 +167,8 @@
   "case_new.tpl.js",
   "case_list.tpl.js",
   "document_links_list.tpl.js",
-  "document_links_details.tpl.js"
+  "document_links_details.tpl.js",
+  "quotations_list.tpl.js",
+  "quotations_details.tpl.js",
+  "quotations_edit.tpl.js"
 ]

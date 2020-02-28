@@ -69,7 +69,11 @@ define(
 		@param {Boolean} disableElements */
 	,	showError: function (message, type, closable, disableElements)
 		{
+			this.showErrorInModal(message);
+			return;
 			this.hideError();
+
+
 
 			// Finds or create the placeholder for the error message
 			var placeholder = this.$('[data-type="alert-placeholder"]');

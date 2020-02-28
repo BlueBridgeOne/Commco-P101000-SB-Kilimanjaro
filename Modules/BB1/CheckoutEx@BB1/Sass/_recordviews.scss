@@ -17,14 +17,12 @@
 		line-height: normal;
 		padding: 0;
 	}
-	@media (max-width: $screen-sm-max) {
-		border-bottom: 1px solid $commco-light-border;
-	}
+	
 }
-.recordviews-actionable {
-@media (max-width: $screen-sm-max) {
-	border-bottom: 1px solid $commco-light-border;
-}
+tr.recordviews-actionable,tr.recordviews {
+
+	border-top: 1px solid $commco-light-border;
+	border-bottom-style:none;
 }
 
 .recordviews-row:hover {
@@ -52,8 +50,26 @@
 	td {
 		vertical-align: middle;
 	}
+	th{
+		font-weight:bold!important;
+	}
 }
-
+.recordviews-quantity-row{
+	width:100%;
+	white-space: nowrap;
+	@media (max-width: $screen-sm-max) {
+	display:inline-block!important;
+	}
+	@media (min-width: $screen-md-min) {
+		width:180px;
+	}
+}
+.recordviews-remove{
+	padding-bottom:$sc-padding-lv1;
+	@media (min-width: $screen-md-min) {
+		padding-bottom:0px;
+	}
+}
 //----------------------
 //	TITLES
 //----------------------
@@ -103,6 +119,8 @@
 .recordviews-label {
 	@extend .sc-label;
 	font-weight:$sc-font-weight-normal;
+	padding-left:3px;
+	padding-right:3px;
 
 	@media (min-width: $screen-md-min) {
 		display: none;
@@ -129,5 +147,6 @@
 .recordviews-title-label-anchor{}
 .recordviews-value {
 	font-weight:$sc-font-weight-normal;
+	font-size: $sc-font-size-m;
 }
 

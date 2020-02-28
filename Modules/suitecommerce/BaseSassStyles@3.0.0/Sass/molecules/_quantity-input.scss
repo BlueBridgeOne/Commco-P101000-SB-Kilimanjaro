@@ -25,41 +25,58 @@
 
 input[type="number"].quantity-input {
  	width: 60px;
- 	height: 40px;
+ 	height: 34px;
  	text-align: right;
- 	padding: $sc-margin-lv2;
+ 	padding: $sc-margin-lv1;
 	background-color: $sc-color-theme-background;
-	border: 0;
-	float: left;
-	margin-bottom: 0;
+	display:inline-block;
+	afloat: left;
+	
+	margin:0;
+	vertical-align:middle;
+	border-radius: 0;
 
-	@media (min-width: $screen-md-min) {
-		display: block;
-		background: white;
-		float: none;
+
 		border: 1px solid $sc-color-theme-border;
-	}
+	
 }
 
 .quantity-input-button {
-	background-color: $sc-color-theme-400;
+	background-color: $sc-color-theme-base;
 	color: $sc-neutral-shade-0;
-	border: none;
-	width: 40px;
-	height: 40px;
-	float: left;
+	border: 1px solid transparent;
+	width: 34px;
+	height: 34px;
+	afloat: left;
+	bottom:0px;
 
 	&:hover, &:active  {
-		background-color: $sc-color-theme-900;
+		background-color: darken($sc-color-theme-base,20);
 	}
 
 	&:focus {
 		outline: none;
 	}
 
-	@media (min-width: $screen-md-min) {
-		display: none;
+}
+
+.delete-input-button {
+	background-color: $commco-border;
+	color: $sc-neutral-shade-0;
+	border: none;
+	width: 34px;
+	height: 34px;
+	afloat: left;
+	border-radius: $sc-border-radius;
+
+	&:hover, &:active  {
+		background-color: darken($commco-border,20);
 	}
+
+	&:focus {
+		outline: none;
+	}
+
 }
 
 .quantity-input-button-add {

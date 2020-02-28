@@ -9,6 +9,11 @@
 //List framework
 $row-space: $sc-padding-lv3;
 
+.item-dropdown{
+	@extend .menu-tree-node-submenu-wrapper;
+	width:auto!important;
+display:none;
+}
 @mixin table-flex-fold-all() {
 	td {
 		display: block;

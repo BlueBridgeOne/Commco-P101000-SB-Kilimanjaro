@@ -125,6 +125,9 @@ input.input-small, select.input-small {
 	width: auto;
 	min-width: 80px;
 }
+@media (max-width: $screen-xs-max) {
+select,.profile-information-input-large{width:100%!important;}
+}
 
 // Form select fields
 //

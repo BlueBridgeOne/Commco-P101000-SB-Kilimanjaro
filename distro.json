@@ -17,6 +17,7 @@
         "BB1/DocumentLinks": "Commco",
         "BB1/Quotations": "Commco",
         "BB1/Careers": "Commco",
+        "BB1/Tools": "BB1",
         "suitecommerce/Account": "2.4.0",
         "suitecommerce/Address": "2.4.3",
         "suitecommerce/AjaxRequestsKiller": "2.0.2",
@@ -392,7 +393,8 @@
                 "Cart.Component",
                 "DocumentLinks.ServiceController",
                 "Quotations.ServiceController",
-                "Careers.ServiceController"
+                "Careers.ServiceController",
+                "Tools"
             ],
             "exportFile": "ssp_libraries.js",
             "amdConfig": {

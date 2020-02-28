@@ -18,7 +18,7 @@ define('Quotations', [
         },{
           id: 'openquotation',
           name: _('Open Quotations').translate(),
-          url: 'quotations/open',
+          url: 'quotes',
           index: 2
         },{
           id: 'savedquotation',
