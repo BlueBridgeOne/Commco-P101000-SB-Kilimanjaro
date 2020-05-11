@@ -70,3 +70,7 @@ p {
 small {
   font-size: $sc-font-size-xs;
 }
+
+.service-font,a[data-itemid="FlexiCare™"] h3,a[data-itemid="HelpLink™"] h3,a[data-itemid="RemoteLink™"] h3{font-family:Serifa,serif;font-weight:300;font-style:italic;}
+
+h1[data-itemid="FlexiCare™"],h1[data-itemid="HelpLink™"],h1[data-itemid="RemoteLink™"]{font-family:Serifa,serif;font-weight:300;font-style:italic;text-transform: none!important;}

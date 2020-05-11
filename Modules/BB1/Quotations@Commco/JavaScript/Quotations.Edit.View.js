@@ -27,6 +27,8 @@ define('Quotations.Edit.View', [
       'click [data-action="submit"]': 'handleSubmit',
       'change #title': 'handleChange',
       'change #location': 'handleChange',
+      'change #programming': 'handleChange',
+      'change #installation': 'handleChange',
       'change .row_item_quantity': 'handleChangeQuantity'
     },
     handleChangeQuantity: function (e) {
@@ -47,7 +49,7 @@ define('Quotations.Edit.View', [
       var items = this.model.get("items");
       var r = parseInt(row);
       items[r].qty = qty;
-      items[r].total = (parseFloat(items[r].rate) * parseFloat(items[r].qty)).toFixed(2);
+      items[r].total = this.numberWithCommas(parseFloat(items[r].rate) * parseFloat(items[r].qty));
 
       $input.closest("tr").find(".item_total").html(items[r].total);
 
@@ -56,7 +58,7 @@ define('Quotations.Edit.View', [
 
       var $this = $(e.target);
       var name = $this.attr("name");
-      if (name == "title" || name == "location") {
+      if (name == "title" || name == "location"|| name == "programming"|| name == "installation") {
         this.model.set(name, $this.val());
       }
     },
@@ -72,7 +74,7 @@ define('Quotations.Edit.View', [
       }, {
         wait: true,
         success: function (model, response) {
-          console.log('Successfully saved! '+forceRender);
+          console.log('Successfully saved! ' + forceRender);
 
 
           if (forceRender) {
@@ -83,13 +85,13 @@ define('Quotations.Edit.View', [
                   trigger: false
                 });
               }
-                self.render();
-              
+              self.render();
+
             });
-          } else if (id == "new") {
+          } else {
             //response.internalid
-            Backbone.history.navigate('#quotations/saved/' + model.get("internalid"), {
-              trigger: false
+            Backbone.history.navigate('#quotations/saved', {
+              trigger: true
             });
           }
 
@@ -106,15 +108,25 @@ define('Quotations.Edit.View', [
       this.model.save({
         title: $("#title").val(),
         location: $("#location").val(),
+        programming: $("#programming").val(),
+        installation: $("#installation").val(),
         items: this.model.get("items"),
         submit: true
       }, {
         wait: true,
         success: function (model, response) {
           console.log('Successfully submitted!');
-          self.model.fetch().done(function () {
-            self.showContent();
-          });
+          if (response.quoteid) {
+            //console.log(response);
+            Backbone.history.navigate('#quotes/' + response.quoteid, {
+              trigger: true
+            });
+          } else {
+            self.model.fetch().done(function () {
+              self.showContent();
+            });
+          }
+
         },
         error: function (model, error) {
           console.log(error.responseText);
@@ -175,24 +187,26 @@ define('Quotations.Edit.View', [
         this.updateSubtotal();
       }
     },
-    updateSubtotal:function(){
+    updateSubtotal: function () {
       var items = this.model.get("items") || [];
-      var subtotal=0,tax=0,linetotal;
+      var subtotal = 0,
+        tax = 0,
+        linetotal;
       for (var i = 0; i < items.length; i++) {
         if (!items[i].rate_message) {
-          linetotal=(parseFloat(items[i].rate) * parseFloat(items[i].qty));
-          subtotal+=linetotal;
-          tax+=linetotal*parseFloat((items[i].taxrate||"20").split("%").join(""))/100;
-          items[i].total = (tax+linetotal).toFixed(2);
+          linetotal = (parseFloat(items[i].rate) * parseFloat(items[i].qty));
+          subtotal += linetotal;
+          tax += linetotal * parseFloat((items[i].taxrate || "20").split("%").join("")) / 100;
+          items[i].total = this.numberWithCommas(linetotal);
         }
       }
-      var subtotal=Math.ceil(100*subtotal)/100;
-      var tax=Math.ceil(100*tax)/100;
-      var total=subtotal+tax;
+      var subtotal = Math.ceil(100 * subtotal) / 100;
+      var tax = Math.ceil(100 * tax) / 100;
+      var total = subtotal + tax;
 
-      document.getElementById("quote-subtotal").innerHTML=subtotal.toFixed(2);
-      document.getElementById("quote-tax").innerHTML=tax.toFixed(2);
-      document.getElementById("quote-total").innerHTML=total.toFixed(2);
+      document.getElementById("quote-subtotal").innerHTML = this.numberWithCommas(subtotal);
+      document.getElementById("quote-tax").innerHTML = this.numberWithCommas(tax);
+      document.getElementById("quote-total").innerHTML = this.numberWithCommas(total);
     },
     handleMinus: function (e) {
       var $button = jQuery(e.target);
@@ -214,10 +228,10 @@ define('Quotations.Edit.View', [
         var items = this.model.get("items");
         var r = parseInt(row);
         items[r].qty = qty;
-        var linetotal= (parseFloat(items[r].rate) * parseFloat(items[r].qty))
-        var tax=linetotal*parseFloat((items[r].taxrate||"20").split("%").join(""))/100;
+        var linetotal = (parseFloat(items[r].rate) * parseFloat(items[r].qty))
+        var tax = linetotal * parseFloat((items[r].taxrate || "20").split("%").join("")) / 100;
 
-        items[r].total =(linetotal+tax).toFixed(2);
+        items[r].total = this.numberWithCommas(linetotal + tax);
         $button.closest("tr").find(".item_total").html(items[r].total);
         this.updateSubtotal();
       }
@@ -239,10 +253,10 @@ define('Quotations.Edit.View', [
         var items = this.model.get("items");
         var r = parseInt(row);
         items[r].qty = qty;
-        var linetotal= (parseFloat(items[r].rate) * parseFloat(items[r].qty))
-        var tax=linetotal*parseFloat((items[r].taxrate||"20").split("%").join(""))/100;
+        var linetotal = (parseFloat(items[r].rate) * parseFloat(items[r].qty))
+        var tax = linetotal * parseFloat((items[r].taxrate || "20").split("%").join("")) / 100;
 
-        items[r].total =(linetotal+tax).toFixed(2);
+        items[r].total = this.numberWithCommas(linetotal + tax);
 
         $button.closest("tr").find(".item_total").html(items[r].total);
         this.updateSubtotal();
@@ -343,6 +357,9 @@ define('Quotations.Edit.View', [
         }
       }, 10);
     },
+    numberWithCommas:function(x) {
+      return x.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  },
     getContext: function () {
       // console.log(this.model);
       // console.log(this.model.get("title"));
@@ -366,34 +383,36 @@ define('Quotations.Edit.View', [
 
       }
       var items = this.model.get("items") || [];
-      var subtotal=0,tax=0,linetotal;
+      var subtotal = 0,
+        tax = 0,
+        linetotal;
       for (var i = 0; i < items.length; i++) {
         if (!items[i].rate_message) {
-          if(items[i].sup_cost){
-            items[i].rate=items[i].sup_cost;
-            items[i].is_sup_cost=true;
+          if (items[i].sup_cost) {
+            items[i].rate = items[i].sup_cost;
+            items[i].is_sup_cost = true;
           }
-          linetotal=(parseFloat(items[i].rate) * parseFloat(items[i].qty));
-          
-          subtotal+=linetotal;
-          tax+=linetotal*parseFloat((items[i].taxrate||"20").split("%").join(""))/100;
+          linetotal = (parseFloat(items[i].rate) * parseFloat(items[i].qty));
 
-          items[i].total = (tax+linetotal).toFixed(2);
+          subtotal += linetotal;
+          tax += linetotal * parseFloat((items[i].taxrate || "20").split("%").join("")) / 100;
+
+          items[i].total = this.numberWithCommas(linetotal);
         }
       }
-      var subtotal=Math.ceil(100*subtotal)/100;
-      var tax=Math.ceil(100*tax)/100;
-      var total=subtotal+tax;
+      var subtotal = Math.ceil(100 * subtotal) / 100;
+      var tax = Math.ceil(100 * tax) / 100;
+      var total = subtotal + tax;
 
-      this.model.set("subtotal",subtotal.toFixed(2));
-      this.model.set("tax",tax.toFixed(2));
-      this.model.set("total",total.toFixed(2));
+      this.model.set("subtotal", this.numberWithCommas(subtotal));
+      this.model.set("tax", this.numberWithCommas(tax));
+      this.model.set("total", this.numberWithCommas(total));
 
       this.model.set("locations", locations);
       this.model.set("editable", !this.model.get("quotation"));
       var choice = this.model.get("choice");
       for (var i = 0; i < choice.length; i++) {
-        choice[i].match = choice[i].itemText.toLowerCase() + " " + choice[i].itemCode.toLowerCase();
+        choice[i].match = choice[i].itemText.toLowerCase() + " " + choice[i].itemCode.toLowerCase() + " " + choice[i].itemManu.toLowerCase();
       }
       return this.model;
     }

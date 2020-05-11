@@ -53,6 +53,30 @@
                                                         {{/each}}</p>
                                                 {{/if}}
                                         </div>
+                                        <div class="profile-information-row" data-input="installation"
+                                                data-validation="control-group"><label class="profile-information-label"
+                                                        for="title"> Do you require installation?</label>
+                                                {{#if editable}}
+                                                <input type="checkbox"
+                                                                class="profile-information-input-large" id="installation"
+                                                                name="installation" data-type="checkbox" {{#ifEquals installation 'T'}}checked{{/ifEquals}} value="T">
+                                               
+                                                {{else}}
+                                                <p>{{#ifEquals installation 'T'}}Yes{{else}}No{{/ifEquals}}</p>
+                                                {{/if}}
+                                        </div>
+                                        <div class="profile-information-row" data-input="programming"
+                                                data-validation="control-group"><label class="profile-information-label"
+                                                        for="title"> Do you require programming?</label>
+                                                {{#if editable}}
+                                                <input type="checkbox"
+                                                                class="profile-information-input-large" id="programming"
+                                                                name="programming" data-type="checkbox" {{#ifEquals programming 'T'}}checked{{/ifEquals}} value="T">
+                                                
+                                                {{else}}
+                                                <p>{{#ifEquals programming 'T'}}Yes{{else}}No{{/ifEquals}}</p>
+                                                {{/if}}
+                                        </div>
                                         {{#if editable}}
                                         <ul class="profile-information-row" data-input="search"
                                                 data-validation="control-group"><label class="profile-information-label"
@@ -81,7 +105,7 @@
                                                                 {{#each choice}}
                                                                 <li data-value="{{internalid}}" data-match="{{match}}"
                                                                         class="menu-tree-node"><a
-                                                                                class="menu-tree-node-item-anchor">{{itemText}}
+                                                                                class="menu-tree-node-item-anchor">{{itemManu}}: {{itemText}}
                                                                                 ({{itemCode}})</a>
                                                                 </li>
                                                                 {{/each}}

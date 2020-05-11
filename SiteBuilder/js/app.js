@@ -106,6 +106,10 @@ $(document).ready(function () {
         }
 
     });
+
+    //force height
+
+    
 });
 
 function checkContactForm() { //Check the contact us form

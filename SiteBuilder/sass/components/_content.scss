@@ -54,6 +54,17 @@
     max-width: $max-width;
     margin-left: auto !important;
     margin-right: auto !important;
+    flex-grow:1;
+    text-align:left;
+    min-height: 54vh;
+
+    @media (min-width: $screen-md-min) {
+        min-height: 72vh;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        min-height: 77vh;
+    }
 }
 
 .main.content {

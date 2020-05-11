@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/*
+gulp sbsass
+gulpfile.js
+*/
 /*
  * Primary color settings
  */
@@ -11,7 +16,9 @@ body {
   font-family: "Effra";
   font-size: 18px;
   margin: 0 !important;
-  background-color: #666; }
+  background-color: #666;
+  min-height: 100vh;
+  text-align: center; }
 
 .main {
   background-color: #F1F1F1;
@@ -100,6 +107,17 @@ p {
 small {
   font-size: 10px; }
 
+.service-font, a[data-itemid="FlexiCare™"] h3, a[data-itemid="HelpLink™"] h3, a[data-itemid="RemoteLink™"] h3 {
+  font-family: Serifa,serif;
+  font-weight: 300;
+  font-style: italic; }
+
+h1[data-itemid="FlexiCare™"], h1[data-itemid="HelpLink™"], h1[data-itemid="RemoteLink™"] {
+  font-family: Serifa,serif;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: none !important; }
+
 .navbar {
   border-radius: 0px !important; }
 
@@ -144,7 +162,7 @@ small {
 .hide-at-start {
   display: block !important; }
 
-@media (max-width: 991px) {
+@media (max-width: 1239px) {
   .navbar-left,
   .navbar-right {
     float: none !important; }
@@ -197,7 +215,7 @@ small {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1239px) {
     .navbar-nav {
       display: inline-block !important; } }
 
@@ -228,7 +246,7 @@ small {
   display: none;
   text-align: left; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1239px) {
   .container > div.navbar-collapse {
     background-color: #404040;
     margin-top: -8px; }
@@ -247,7 +265,7 @@ small {
     .dropdown-menu li a:hover {
       color: #404040 !important; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1239px) {
   .mini-menu {
     box-shadow: none !important;
     position: static;
@@ -275,7 +293,7 @@ nav {
     background-color: transparent; }
   nav li.open a.dropdown-toggle {
     background-color: #940014 !important; }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1239px) {
     nav a.dropdown-toggle:hover,
     nav a.nav-link:hover {
       background-color: #666 !important; }
@@ -297,7 +315,8 @@ nav {
     display: inline-block; }
 
 .header-user-icon {
-  width: 26px; }
+  width: 26px;
+  height: 22px; }
 
 .footer {
   color: #404040;
@@ -697,7 +716,16 @@ label {
 #div__body {
   max-width: 1240px;
   margin-left: auto !important;
-  margin-right: auto !important; }
+  margin-right: auto !important;
+  flex-grow: 1;
+  text-align: left;
+  min-height: 54vh; }
+  @media (min-width: 768px) {
+    #div__body {
+      min-height: 72vh; } }
+  @media (min-width: 992px) {
+    #div__body {
+      min-height: 77vh; } }
 
 .main.content ul {
   list-style: none;
@@ -851,3 +879,6 @@ label {
   width: auto;
   color: #ffffff !important;
   display: inline-block; }
+
+aa[data-itemid="Services"] {
+  display: none; }
