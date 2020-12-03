@@ -1,35 +1,38 @@
 /*Easy to use responsive column*/
-.column,.column2 {
+.column,
+.column2 {
     width: 50%;
     float: left;
     margin-bottom: 30px;
-    padding-right:20px;
+    padding-right: 20px;
 
     @media screen and (max-width: $screen-xs-max) {
         width: 100%;
         display: block;
         margin-bottom: 15px;
-        padding:0px;
+        padding: 0px;
     }
 }
+
 .column3 {
     width: 33%;
     float: left;
     margin-bottom: 30px;
-    padding-right:20px;
+    padding-right: 20px;
 
     @media screen and (max-width: $screen-sm-max) {
         width: 100%;
         display: block;
         margin-bottom: 15px;
-        padding:0px;
+        padding: 0px;
     }
 }
+
 .column4 {
     width: 25%;
     float: left;
     margin-bottom: 30px;
-    padding-right:20px;
+    padding-right: 20px;
 
     @media screen and (max-width: $screen-sm-max) {
         width: 50%;
@@ -37,11 +40,12 @@
         margin-bottom: 15px;
     }
 }
+
 .column5 {
     width: 20%;
     float: left;
     margin-bottom: 30px;
-    padding-right:20px;
+    padding-right: 20px;
 
     @media screen and (max-width: $screen-sm-max) {
         width: 50%;
@@ -54,8 +58,8 @@
     max-width: $max-width;
     margin-left: auto !important;
     margin-right: auto !important;
-    flex-grow:1;
-    text-align:left;
+    flex-grow: 1;
+    text-align: left;
     min-height: 54vh;
 
     @media (min-width: $screen-md-min) {
@@ -71,17 +75,19 @@
     ul {
         list-style: none;
         /* Remove default bullets */
-        
+
     }
-    ul a{
+
+    ul a {
         font-size: $sc-font-size-m;
-        
+
         @media (min-width: $screen-md-min) {
             font-size: $sc-font-size-l;
         }
     }
-    ul li{
-        line-height:1.8;
+
+    ul li {
+        line-height: 1.8;
     }
 
     ul li::before {
@@ -116,18 +122,24 @@
         aborder: 1px solid $commco-light-border;
         display: block;
     }
-    img.icon{
-        width:100px;
-        display:block;
+
+    img.icon {
+        width: 100px;
+        display: block;
+
         @media screen and (max-width: $screen-xs-max) {
-            width:125px;
+            width: 125px;
         }
     }
-    img.inline{padding-right:10px;padding-bottom:10px;display:inline;}
-    
 
-    h1
-    {
+    img.inline {
+        padding-right: 10px;
+        padding-bottom: 10px;
+        display: inline;
+    }
+
+
+    h1 {
         @media screen and (max-width: $screen-xs-max) {
             text-align: center;
         }
@@ -158,21 +170,23 @@
 }
 
 .getintouch {
-    
+
     text-align: center;
     background-color: $commco-light-border;
 }
-.getintouch-text{
-    width:226px;
-    font-size:16px;
+
+.getintouch-text {
+    width: 226px;
+    font-size: 16px;
 }
+
 .getintouch-box {
     background-color: $commco-white;
     max-width: 90%;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left:15px;
-    margin-right:15px;
+    margin-left: 15px;
+    margin-right: 15px;
     padding: 30px 60px;
     width: auto;
     display: inline-block;
@@ -188,13 +202,44 @@
 
 .main-text {
     margin-bottom: 30px;
-    p{
+
+    p {
         font-size: 20px;
         text-align: left;
         display: block;
-        font-weight:300;
+        font-weight: 300;
     }
 }
-.leader-link-title{margin-top:10px!important;}
 
-.login-title{margin-bottom:25px;}
+.leader-link-title {
+    margin-top: 10px !important;
+}
+
+.leader-link-title-full {
+    margin-top: 10px !important;
+}
+
+.login-title {
+    margin-bottom: 25px;
+}
+
+.leader-link-date {
+    float: right;
+    font-weight: normal;
+    font-size: 14px;
+    color: $grey-medium;
+    margin-top:6px;
+    word-spacing: normal;
+    @media screen and (max-width: $screen-sm-max) {
+        float: none;
+        display:block;
+    }
+}
+.title-date {
+    word-spacing: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: $grey-medium;
+    margin-top:6px;
+        display:block;
+}

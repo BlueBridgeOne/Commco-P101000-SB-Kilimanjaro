@@ -15,7 +15,7 @@ define('Quotations.Model', [
       var filters = [
         ['custrecord_bb1_draftquote_customer', 'anyof', nlapiGetUser()],
         "AND",
-        ["custrecord_bb1_draftquote_quotation","anyof","@NONE@"]
+        ["custrecord_bb1_draftquote_quotation", "anyof", "@NONE@"]
       ];
 
       var columns = [
@@ -28,7 +28,7 @@ define('Quotations.Model', [
         // nlapiLogExecution('DEBUG', 'RESULT ' + result.getValue('name'));
         return {
           internalid: result.getValue('internalid'),
-          created: new Date(result.getValue('created')).toDateString(),
+          created: nlapiStringToDate(result.getValue('created')).toDateString(),
           title: result.getValue('name'),
           customer: result.getValue('custrecord_bb1_draftquote_customer'),
           location: result.getValue('custrecord_bb1_draftquote_location'),
@@ -78,7 +78,7 @@ define('Quotations.Model', [
           ]
         );
 
-        var SO = nlapiCreateRecord("salesorder", {
+        var SO = nlapiCreateRecord("estimate", {
           recordmode: 'dynamic',
           entity: nlapiGetUser()
         });
@@ -92,9 +92,9 @@ define('Quotations.Model', [
             res.currencysymbol = "€";
             break;
         }
-//get item details and prices using a dynamic so.
+        //get item details and prices using a dynamic so.
         if (customrecord_bb1_draftquotelineSearch) {
-          var itemLookup=[];
+          var itemLookup = [];
           for (var i = 0; i < customrecord_bb1_draftquotelineSearch.length; i++) {
             sres = customrecord_bb1_draftquotelineSearch[i];
             item = {};
@@ -106,7 +106,7 @@ define('Quotations.Model', [
             item.itemType = sres.getValue("type", "CUSTRECORD_BB1_DRAFTQUOTATIONLINE_ITEM");
             item.qty = sres.getValue('custrecord_bb1_draftquotationline_qty');
 
-            itemLookup.push(item.item );
+            itemLookup.push(item.item);
 
             try {
 
@@ -129,7 +129,7 @@ define('Quotations.Model', [
           }
 
 
-//lookup supplier costs.
+          //lookup supplier costs.
           var customrecord_bb1_sup_pricesSearch = nlapiSearchRecord("customrecord_bb1_sup_prices", null,
             [
               ["custrecord_bb1_sp_cust", "anyof", nlapiGetUser()],
@@ -142,14 +142,14 @@ define('Quotations.Model', [
             ]
           );
 
-          if(customrecord_bb1_sup_pricesSearch){
+          if (customrecord_bb1_sup_pricesSearch) {
             var sup_item;
-            for(var i=0;i<customrecord_bb1_sup_pricesSearch.length;i++){
+            for (var i = 0; i < customrecord_bb1_sup_pricesSearch.length; i++) {
               sres = customrecord_bb1_sup_pricesSearch[i];
-              sup_item=sres.getValue('custrecord_bb1_sp_item');
-              for(var j=0;j<items.length;j++){
-                if(items[j].item==sup_item){
-                  items[j].sup_cost=sres.getValue('custrecord_bb1_supp_sup_cost');
+              sup_item = sres.getValue('custrecord_bb1_sp_item');
+              for (var j = 0; j < items.length; j++) {
+                if (items[j].item == sup_item) {
+                  items[j].sup_cost = sres.getValue('custrecord_bb1_supp_sup_cost');
                 }
               }
 
@@ -164,21 +164,24 @@ define('Quotations.Model', [
       var filter = [
         ["internalidnumber", "greaterthan", 0],
         "AND",
-        ["isinactive", "is", "F"],
-        "AND",
-        ["type", "anyof", "InvtPart"]
+        ["isinactive", "is", "F"]
       ];
 
+      // ,
+      //   "AND",
+      //   ["type", "anyof", "InvtPart"]
       // ,
       //   "AND",
       //   ["matrixchild", "is", "F"]
 
       var find = [];
-      
+      var internalid = new nlobjSearchColumn('internalid').setSort(false); //
+      find.push(internalid);
+      find.push(new nlobjSearchColumn("itemid"));
       find.push(new nlobjSearchColumn("salesdescription"));
       find.push(new nlobjSearchColumn("displayname"));
       find.push(new nlobjSearchColumn("cseg_bb1_manufactur"));
-      
+
       //find[0].setSort();
 
 
@@ -191,23 +194,25 @@ define('Quotations.Model', [
 
 
         do {
-          var lastid;
-          for (var j = 0; j < itemSearch.length; j++) {
-            iresult = itemSearch[j];
-            if(iresult.getValue("displayname")){
-            res.choice.push({
-              internalid: iresult.getId(),
-              itemText: iresult.getValue("salesdescription"),
-              itemCode: iresult.getValue("displayname"),
-              itemManu: iresult.getText("cseg_bb1_manufactur")
-            });
-          }
-            lastid = iresult.getId();
-          }
-          //nlapiLogExecution("debug","itemSearch.length",itemSearch.length);
-          if (itemSearch.length < 1000) {
+          if (!itemSearch) {
             break;
           }
+
+          var lastid;
+          for (var j in itemSearch) {
+            iresult = itemSearch[j];
+            if (iresult.getValue("displayname")) {
+              res.choice.push({
+                internalid: iresult.getId(),
+                itemText: iresult.getValue("salesdescription"),
+                itemCode: iresult.getValue("displayname"),
+                itemManu: iresult.getText("cseg_bb1_manufactur")
+              });
+            }
+            lastid = iresult.getValue("internalid");
+          }
+          //nlapiLogExecution("debug","itemSearch.length",itemSearch.length);
+          
 
           filter[0] = ["internalidnumber", "greaterthan", lastid];
           itemSearch = nlapiSearchRecord("item", null,
@@ -217,8 +222,8 @@ define('Quotations.Model', [
         } while (true);
       }
 
-      res.choice.sort(function(a,b){
-        return a.itemText.localeCompare(b.itemText);
+      res.choice.sort(function (a, b) {
+        return a.itemCode.localeCompare(b.itemCode);
       });
 
       return res;
@@ -242,17 +247,17 @@ define('Quotations.Model', [
         throw (new Error("This quotation has already been submitted."));
       }
 
-      if(!data.installation){
-        data.installation="F";
+      if (!data.installation) {
+        data.installation = "F";
       }
-      if(!data.programming){
-        data.programming="F";
+      if (!data.programming) {
+        data.programming = "F";
       }
 
       rec.setFieldValue("name", data.title);
       rec.setFieldValue("custrecord_bb1_draftquote_location", data.location);
-      
-      rec.setFieldValue("custrecord_bb1_draftquote_installation",data.installation);
+
+      rec.setFieldValue("custrecord_bb1_draftquote_installation", data.installation);
       rec.setFieldValue("custrecord_bb1_draftquote_programming", data.programming);
 
       nlapiSubmitRecord(rec, false, true);
@@ -260,7 +265,8 @@ define('Quotations.Model', [
       //existing items:
 
       var items = [],
-        hitems = {},item, sres;
+        hitems = {},
+        item, sres;
 
       var customrecord_bb1_draftquotelineSearch = nlapiSearchRecord("customrecord_bb1_draftquoteline", null,
         [
@@ -278,23 +284,23 @@ define('Quotations.Model', [
           item.internalid = sres.getId();
           item.item = sres.getValue('custrecord_bb1_draftquotationline_item');
           item.qty = sres.getValue('custrecord_bb1_draftquotationline_qty');
-          
-          if(hitems[item.item]){
+
+          if (hitems[item.item]) {
             nlapiDeleteRecord("customrecord_bb1_draftquoteline", sres.getId());
             body += "Delete record " + sres.getId() + "\r\n";
-          }else{
+          } else {
             items.push(item);
-          hitems[item.item] = item;
+            hitems[item.item] = item;
           }
         }
-       // nlapiLogExecution("debug","Existing items "+JSON.stringify(hitems));
+        // nlapiLogExecution("debug","Existing items "+JSON.stringify(hitems));
       }
       var body = JSON.stringify(hitems) + '\r\n';
-      
+
       for (var i = 0; i < data.items.length; i++) {
-        body += "add "+data.items[i].item + ' ' + hitems[data.items[i].item] + '\r\n';
+        body += "add " + data.items[i].item + ' ' + hitems[data.items[i].item] + '\r\n';
         if (hitems[data.items[i].item]) { //Record exists!
-          
+
           item = hitems[data.items[i].item];
           delete hitems[data.items[i].item];
           data.items[i].found = true;
@@ -336,7 +342,9 @@ define('Quotations.Model', [
           throw (new Error("That location could not be found. Please select another location or update your address book."));
         }
 
-        var quote = nlapiCreateRecord("estimate", {recordmode: 'dynamic'});
+        var quote = nlapiCreateRecord("estimate", {
+          recordmode: 'dynamic'
+        });
         quote.setFieldValue("entity", nlapiGetUser());
         quote.setFieldValue("title", data.title);
         quote.setFieldValue("memo", "Created from web portal.");
@@ -344,7 +352,7 @@ define('Quotations.Model', [
         quote.setFieldValue("custbody_bb1_qu_installation", data.installation);
         quote.setFieldValue("custbody_bb1_qu_programming", data.programming);
         quote.setFieldValue("entitystatus", 29);
-        
+
 
         var prefix;
         for (var i = 0; i < 2; i++) {
@@ -434,7 +442,7 @@ define('Quotations.Model', [
         //   reply = "https://system.eu2.netsuite.com" + nlapiResolveURL('RECORD', 'supportcase', caseID, "EDIT");
         // }
 
-        Tools.emailAlert(845, 845, "New Quotation", data.title, "A new quotation has been submitted from the web portal.", params, reply);
+        Tools.emailAlert(845, nlapiGetUser(), "New Quotation", data.title, "A new quotation has been submitted from the web portal.", params, reply);
 
         return {
           internalid: data.internalid,

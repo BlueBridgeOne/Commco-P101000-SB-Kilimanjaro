@@ -231,7 +231,7 @@ define('Quotations.Edit.View', [
         var linetotal = (parseFloat(items[r].rate) * parseFloat(items[r].qty))
         var tax = linetotal * parseFloat((items[r].taxrate || "20").split("%").join("")) / 100;
 
-        items[r].total = this.numberWithCommas(linetotal + tax);
+        items[r].total = this.numberWithCommas(linetotal); // + tax
         $button.closest("tr").find(".item_total").html(items[r].total);
         this.updateSubtotal();
       }
@@ -256,7 +256,7 @@ define('Quotations.Edit.View', [
         var linetotal = (parseFloat(items[r].rate) * parseFloat(items[r].qty))
         var tax = linetotal * parseFloat((items[r].taxrate || "20").split("%").join("")) / 100;
 
-        items[r].total = this.numberWithCommas(linetotal + tax);
+        items[r].total = this.numberWithCommas(linetotal); // + tax
 
         $button.closest("tr").find(".item_total").html(items[r].total);
         this.updateSubtotal();
@@ -368,7 +368,7 @@ define('Quotations.Edit.View', [
       // };
 
       var collection = this.profileModel.get('addresses');
-
+console.log(collection);
       var location = this.model.get("location"),
         locations = [{
           internalid: 0,
@@ -377,7 +377,7 @@ define('Quotations.Edit.View', [
       for (var i = 0; i < collection.length; i++) {
         locations.push({
           internalid: collection.models[i].get("internalid"),
-          text: (collection.models[i].get("fullname") || "") + ", " + (collection.models[i].get("addr1") || "") + ", " + (collection.models[i].get("city") || "") + ", " + (collection.models[i].get("zip") || ""),
+          text: "("+(collection.models[i].get("country") || "") + ") " +(collection.models[i].get("fullname") || "") + ", " + (collection.models[i].get("addr1") || "") + ", " + (collection.models[i].get("city") || ""), //+ ", " + (collection.models[i].get("zip") || "")
           selected: (collection.models[i].get("internalid") == location)
         });
 
@@ -396,7 +396,7 @@ define('Quotations.Edit.View', [
 
           subtotal += linetotal;
           tax += linetotal * parseFloat((items[i].taxrate || "20").split("%").join("")) / 100;
-
+          items[i].rate_fmt=this.numberWithCommas(parseFloat(items[i].rate||"0"));
           items[i].total = this.numberWithCommas(linetotal);
         }
       }
@@ -418,3 +418,4 @@ define('Quotations.Edit.View', [
     }
   })
 });
+

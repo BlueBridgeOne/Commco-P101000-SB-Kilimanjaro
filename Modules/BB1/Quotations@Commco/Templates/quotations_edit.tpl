@@ -178,7 +178,7 @@
                                                                 {{#if rate_message}}
                                                                 {{rate_message}}
                                                                 {{else}}
-                                                                {{../currencysymbol}}{{rate}}
+                                                                {{../currencysymbol}}{{rate_fmt}}
                                                                 {{/if}}
                                                         </span>
                                                 </td>

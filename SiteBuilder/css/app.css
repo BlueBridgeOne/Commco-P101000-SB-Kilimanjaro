@@ -24,7 +24,8 @@ body {
   background-color: #F1F1F1;
   padding-top: 30px;
   padding-bottom: 30px;
-  min-height: 400px; }
+  min-height: 400px;
+  text-align: left; }
   @media screen and (max-width: 767px) {
     .main {
       padding-top: 30px; } }
@@ -458,9 +459,9 @@ nav {
     @media screen and (min-width: 576px) {
       .leader-link:hover {
         background-color: #D6001C;
-        color: #fff; } }
-    .leader-link:hover .leader-link-align {
-      color: #fff !important; }
+        color: #fff; }
+        .leader-link:hover .leader-link-align, .leader-link:hover .leader-link-date {
+          color: #fff !important; } }
   .leader-link .leader-link-image-wrap {
     display: table-cell;
     width: 45%; }
@@ -503,6 +504,58 @@ nav {
 @media screen and (min-width: 576px) {
   .leader-link-image.mobile {
     display: none !important; } }
+
+.leader-link-full {
+  display: table;
+  width: 100%;
+  text-decoration: none !important;
+  background-color: #fff;
+  color: #404040; }
+  @media screen and (max-width: 575px) {
+    .leader-link-full {
+      display: block; } }
+  .leader-link-full:hover {
+    color: #404040; }
+    @media screen and (min-width: 576px) {
+      .leader-link-full:hover {
+        background-color: #D6001C;
+        color: #fff; }
+        .leader-link-full:hover .leader-link-align, .leader-link-full:hover .leader-link-date {
+          color: #fff !important; } }
+  .leader-link-full .leader-link-image-wrap {
+    display: table-cell;
+    width: 22%; }
+    @media screen and (max-width: 575px) {
+      .leader-link-full .leader-link-image-wrap {
+        display: block;
+        width: 100%;
+        position: relative;
+        padding-top: 30%;
+        overflow: hidden; }
+        .leader-link-full .leader-link-image-wrap img {
+          display: block;
+          position: absolute;
+          top: -35%;
+          left: 0; } }
+  .leader-link-full .leader-link-image {
+    width: 100%; }
+  .leader-link-full .leader-link-text-wrap {
+    display: table-cell;
+    width: 78%;
+    padding: 0px 20px;
+    vertical-align: middle; }
+    @media screen and (max-width: 575px) {
+      .leader-link-full .leader-link-text-wrap {
+        display: block;
+        width: 100%; } }
+    .leader-link-full .leader-link-text-wrap p {
+      font-size: 16px; }
+  .leader-link-full .leader-link-align {
+    color: #D6001C; }
+  .leader-link-full .leader-link-arrow {
+    padding-left: 10px; }
+  .leader-link-full .leader-link-align {
+    text-align: right; }
 
 .button-link {
   background-color: #fff;
@@ -624,7 +677,9 @@ label {
 
 .banner-h1 {
   background-color: #F1F1F1;
-  padding: 15px 15px 15px 15px; }
+  padding: 15px 0px; }
+  .banner-h1 h1 {
+    word-spacing: 10px; }
 
 .slides,
 .banners {
@@ -667,13 +722,15 @@ label {
   display: block; }
 
 /*Easy to use responsive column*/
-.column, .column2 {
+.column,
+.column2 {
   width: 50%;
   float: left;
   margin-bottom: 30px;
   padding-right: 20px; }
   @media screen and (max-width: 575px) {
-    .column, .column2 {
+    .column,
+    .column2 {
       width: 100%;
       display: block;
       margin-bottom: 15px;
@@ -840,8 +897,31 @@ label {
 .leader-link-title {
   margin-top: 10px !important; }
 
+.leader-link-title-full {
+  margin-top: 10px !important; }
+
 .login-title {
   margin-bottom: 25px; }
+
+.leader-link-date {
+  float: right;
+  font-weight: normal;
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-top: 6px;
+  word-spacing: normal; }
+  @media screen and (max-width: 767px) {
+    .leader-link-date {
+      float: none;
+      display: block; } }
+
+.title-date {
+  word-spacing: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #8c8c8c;
+  margin-top: 6px;
+  display: block; }
 
 .career-link {
   display: block;
@@ -880,5 +960,5 @@ label {
   color: #ffffff !important;
   display: inline-block; }
 
-aa[data-itemid="Services"] {
+a[data-itemid="Careers"] {
   display: none; }
